@@ -1,6 +1,6 @@
 ---
 title: Welcome to Pulumi
-layout: default
+layout: default_index
 ---
 
 <span style="float: right; margin-top: -64px">
@@ -8,46 +8,34 @@ layout: default
     <a href="https://github.com/pulumi" target="_blank"><i class="fab fa-github fa-2x" style="color: #4A5960" aria-hidden="true"></i></a>
 </span>
 
-<table width="100%">
-    <tr>
-        <td width="60%" style="vertical-align: top">
-            <h2 class="get-to-the-cloud">
-                Get Code to the Cloud. Faster. Together.
-            </h2>
-            <p>
-                Build and deploy production-ready containers, serverless functions, and managed cloud services,
-                all in your favorite language but with the benefits of infrastructure as code.
-            </p>
-            <p class="curl-install">
-                $ curl -fsSL https://get.pulumi.com/ | sh
-            </p>
-        </td>
-        <td width="6%"></td>
-        <td width="33%">
-            <div class="learn-box">
-                <h2 class="learn"><i class="material-icons">library_books</i>&nbsp;Learn</h2>
-                <p style="text-align: center">
-                    <a href="/install"><button class="button">INSTALL</button></a>
-                    <a href="/tour"><button class="button">TAKE A TOUR</button></a>
-                    <a href="https://github.com/pulumi/examples"><button class="button">EXAMPLES</button></a>
-                </p>
-            </div>
-        </td>
-    </tr>
-</table>
-<h2>Get Started</h2>
 <div class="card-table">
-    <div class="mdl-card mdl-shadow--2dp">
+    <a href="https://www.pulumi.com"><img src="/images/logo/logo.svg" alt="Pulumi" width="350" style="margin-top: 32px"></a>
+    <h2 class="get-to-the-cloud">
+        Get Code to the Cloud. Faster. Together.
+    </h2>
+    <div>
+        <p class="curl-install">
+            $ curl -fsSL https://get.pulumi.com/ | sh
+        </p>
+    </div>
+    <p style="text-align: center; margin-bottom: 0">
+        <a href="/install"><button class="button small">INSTALL</button></a>
+        <a href="/tour"><button class="button small">TAKE A TOUR</button></a>
+        <a href="https://github.com/pulumi/examples"><button class="button small">EXAMPLES</button></a>
+    </p>
+</div>
+<div class="card-table">
+    <div class="mdl-card mdl-shadow--2dp get-started-card">
+        <img src="/images/icon-feature-containers.svg"
+            style="margin-bottom: 30px" width="125">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">
-                <i class="material-icons">widgets</i>
-                &nbsp;
                 <a href="/quickstart/aws-containers.html">Containers</a>
             </h2>
         </div>
         <div class="mdl-card__supporting-text">
             <span class="card-text">
-                <p>Deploy a Docker container to production in 5 minutes.</p>
+                <p>Deploy a Docker container to production in 5 minutes using your favorite orchestrator.</p>
             </span>
         </div>
         <div class="mdl-card__actions">
@@ -56,17 +44,17 @@ layout: default
             </a>
         </div>
     </div>
-    <div class="mdl-card mdl-shadow--2dp">
+    <div class="mdl-card mdl-shadow--2dp get-started-card">
+        <img src="/images/icon-feature-serverless.svg"
+            style="margin-bottom: 30px" width="125">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">
-                <i class="material-icons">flash_on</i>
-                &nbsp;
                 <a href="/quickstart/aws-rest-api.html">Serverless</a>
             </h2>
         </div>
         <div class="mdl-card__supporting-text">
             <span class="card-text">
-                <p>Stand up a serverless function in 5 minutes.</p>
+                <p>Stand up a serverless API or event handler in 5 minutes using a real lambda in code.</p>
             </span>
         </div>
         <div class="mdl-card__actions">
@@ -75,18 +63,36 @@ layout: default
             </a>
         </div>
     </div>
-    <div class="mdl-card mdl-shadow--2dp">
+    <div class="mdl-card mdl-shadow--2dp get-started-card">
+        <img src="/images/icon-feature-data.svg"
+            style="margin-bottom: 30px" width="125">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">
-                <i class="material-icons">storage</i>
-                &nbsp;
                 <a href="/quickstart/aws-ec2.html">Infrastructure</a>
             </h2>
         </div>
         <div class="mdl-card__supporting-text">
             <span class="card-text">
-                <p>Manage traditional cloud infrastructure or hosted services
-                   using infrastructure as code.</p>
+                <p>Manage cloud infrastructure or hosted services using infrastructure as code.</p>
+            </span>
+        </div>
+        <div class="mdl-card__actions">
+            <a href="/quickstart/aws-ec2.html">
+                <button class="button">GET STARTED</button>
+            </a>
+        </div>
+    </div>
+    <div class="mdl-card mdl-shadow--2dp get-started-card">
+        <img src="/images/icon-feature-colada.svg"
+            style="margin-bottom: 30px" width="125">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">
+                <a href="/quickstart/aws-ec2.html">CoLaDa</a>
+            </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <span class="card-text">
+                <p>Embrace containers, lambdas, and data, using a modern, multi-cloud framework.</p>
             </span>
         </div>
         <div class="mdl-card__actions">

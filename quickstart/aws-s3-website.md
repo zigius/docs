@@ -5,7 +5,6 @@ redirect_from: "/quickstart/part2.html"
 
 In this tutorial, we'll show how you can use [@pulumi/aws] to provision raw resources. First, we'll create a Pulumi program that uploads files from the `www` directory to S3. Then, we'll configure the bucket to serve a website. The [code for this tutorial][s3-folder] is available on GitHub. 
 
-{% include aws-resource-note.md %}
 {% include aws-js-prereqs.md %}
 
 ## Create a bucket and upload files 
@@ -65,8 +64,6 @@ In this tutorial, we'll show how you can use [@pulumi/aws] to provision raw reso
     ```bash
     $ npm install --save @pulumi/aws mime
     ```
-
-1.  Create a new [stack](../reference/stack.html) via `pulumi stack init website-testing`.
 
 1.  Configure the AWS region to deploy to, such as `us-west-2`. After this step, a new file `Pulumi.website-testing.yaml` is created, next to your [Pulumi.yaml project file](../reference/project.html). See [Defining and setting stack settings](../reference/config.html#config-stack) for more information about this file.
 

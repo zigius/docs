@@ -4,8 +4,6 @@ title: Hello, World on AWS
 
 In this tutorial, we'll use Pulumi to create a serverless single-page app that uses a AWS Lambda to change the content that is served. We'll do this with 5 lines of JavaScript, a few lines of configuration, and whatever static content we wish to serve (in this case, a simple HTML page and a favicon).
 
-{% include aws-resource-note.md %}
-
 ## What we'll do
 
 - **Initialize** a new Pulumi project.
@@ -53,8 +51,8 @@ Normally, we'd write some code to define resources for our cloud stack, but in t
 // Import the @pulumi/cloud-aws package
 const cloud = require("@pulumi/cloud-aws");
     
-// Create a public HTTP endpoint (using AWS APIGateway)
-const endpoint = new cloud.HttpEndpoint("hello");
+// Create a public HTTP REST API endpoint (using AWS APIGateway)
+const endpoint = new cloud.API("hello");
     
 // Serve static files from the `www` folder (using AWS S3)
 endpoint.static("/", "www");
