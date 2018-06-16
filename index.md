@@ -3,9 +3,14 @@ title: Welcome to Pulumi
 layout: default_index
 ---
 
-<span style="float: right; margin-top: -64px">
-    <a href="https://join.slack.com/t/pulumi-community/shared_invite/enQtMzc4MDEyMTk5NzAyLWIxYTEwZmM5ZGFiZTQwZDMzOTMzYWIyM2EyOWIwNDg5YzE1MTg5OGQ5NDQ1MjIzNjcxNDU3NzM0ZWI4NDY1ZGY" target="_blank"><i class="fab fa-slack fa-2x" style="color: #4A5960" aria-hidden="true"></i></a>
-    <a href="https://github.com/pulumi" target="_blank"><i class="fab fa-github fa-2x" style="color: #4A5960" aria-hidden="true"></i></a>
+<span class="github-stars-widget">
+    <a
+            href="https://github.com/pulumi/examples"
+            class="github-button"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star pulumi/examples on GitHub">
+        Star</a>
 </span>
 
 <div class="card-table">
@@ -24,6 +29,7 @@ layout: default_index
         <a href="https://github.com/pulumi/examples"><button class="button small">EXAMPLES</button></a>
     </p>
 </div>
+
 <div class="card-table">
     <div class="mdl-card mdl-shadow--2dp get-started-card">
         <img src="/images/icon-feature-containers.svg"
@@ -87,7 +93,7 @@ layout: default_index
             style="margin-bottom: 30px" width="125">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">
-                <a href="/quickstart/aws-ec2.html">CoLaDa</a>
+                <a href="/quickstart/aws-extract-thumbnail.html">CoLaDa</a>
             </h2>
         </div>
         <div class="mdl-card__supporting-text">
@@ -96,12 +102,50 @@ layout: default_index
             </span>
         </div>
         <div class="mdl-card__actions">
-            <a href="/quickstart/aws-ec2.html">
+            <a href="/quickstart/aws-extract-thumbnail.html">
                 <button class="button">GET STARTED</button>
             </a>
         </div>
     </div>
 </div>
 
-For questions or feedback, reach us in our [community Slack channel](https://join.slack.com/t/pulumi-community/shared_invite/enQtMzc4MDEyMTk5NzAyLWIxYTEwZmM5ZGFiZTQwZDMzOTMzYWIyM2EyOWIwNDg5YzE1MTg5OGQ5NDQ1MjIzNjcxNDU3NzM0ZWI4NDY1ZGY),
+<div class="card-table" style="margin: 64px 0;">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="row cols-are-spaced-md">
+            <div class="col col-md-4">
+                <div class="content" style="text-align: center; display: inline-block; margin: auto">
+                    <ul class="logo-roll text-center-xs text-center-sm" style="margin-left: 15px">
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-js.png" alt="js"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-python.png" alt="python"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-golang.png" alt="golang"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-ts.png" alt="typescript"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="content" style="text-align: center; display: inline-block; margin: auto">
+                    <ul class="logo-roll text-center-xs text-center-sm" style="margin-left: 15px">
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-aws.png" alt="aws"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-azure.png" alt="azure"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-gd.png" alt="gd"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-kubernetes.png" alt="kubernetes"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="content" style="text-align: center; display: inline-block; margin: auto">
+                    <ul class="logo-roll text-center-xs text-center-sm" style="margin-left: 15px">
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-github.png" alt="github"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-vs.png" alt="vs"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-npm.png" alt="npm"></li>
+                        <li><img src="https://www.pulumi.com/assets/logos/tech/logo-travisci.png" alt="travisci"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+For questions or feedback, reach us in our
+[community Slack channel](https://join.slack.com/t/pulumi-community/shared_invite/enQtMzc4MDEyMTk5NzAyLWIxYTEwZmM5ZGFiZTQwZDMzOTMzYWIyM2EyOWIwNDg5YzE1MTg5OGQ5NDQ1MjIzNjcxNDU3NzM0ZWI4NDY1ZGY),
 on [GitHub](https://github.com/pulumi), or by emailing [support@pulumi.com](mailto:support@pulumi.com).
