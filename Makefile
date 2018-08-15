@@ -10,6 +10,11 @@ banner:
 	@echo -e "\033[1;37mPulumi Documentation Site\033[0m"
 	@echo -e "\033[1;37m=========================\033[0m"
 
+.PHONY: docker
+docker:
+	docker build . -t docs
+	docker run -it -p 4000:4000 docs
+
 .PHONY: configure
 configure:
 	@echo -e "\033[0;32mCONFIGURE:\033[0m"
@@ -45,6 +50,16 @@ build:
 test:
 	./node_modules/.bin/blc http://localhost:4000 -r --exclude-external  --exclude '*/releases/pulumi*' --exclude '*/examples/*' --exclude '*/reference/pkg/*'
 
+.PHONY: preview
+preview:
+	@echo -e "\033[0;32mPREVIEW:\033[0m"
+ifeq ($(TRAVIS_BRANCH),master)
+	./scripts/preview.sh staging
+endif
+ifeq ($(TRAVIS_BRANCH),production)
+	./scripts/preview.sh production
+endif
+
 .PHONY: deploy
 deploy:
 	@echo -e "\033[0;32mDEPLOY:\033[0m"
@@ -59,7 +74,7 @@ endif
 travis_push:: banner ensure build deploy
 
 .PHONY: travis_pull_request
-travis_pull_request:: banner ensure build
+travis_pull_request:: banner ensure build preview
 
 .PHONY: travis_cron
 travis_cron:: banner ensure build
