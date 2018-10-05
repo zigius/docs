@@ -47,20 +47,36 @@ Let's look at some of those.
 Normally, we'd write some code to define resources for our cloud stack, but in the quickstart this work is done for us. This is the content of `index.js`:
 
 ```javascript
-// Import the [cloud-aws](https://pulumi.io/packages/pulumi-cloud/) package
-const cloud = require("@pulumi/cloud-aws");
-    
-// Create a public HTTP REST API endpoint (using AWS APIGateway)
-const endpoint = new cloud.API("hello");
-    
-// Serve static files from the `www` folder (using AWS S3)
-endpoint.static("/", "www");
-    
-// Serve a simple REST API on `GET /name` (using AWS Lambda)
-endpoint.get("/source", (req, res) => res.json({name: "AWS"}))
-    
+// Import the [pulumi/aws](https://pulumi.io/reference/pkg/nodejs/@pulumi/aws/index.html) package
+const aws = require("@pulumi/aws");
+
+// Create a public HTTP endpoint (using AWS APIGateway)
+const endpoint = new aws.apigateway.x.API("hello", {
+    routes: [
+        // Serve static files from the `www` folder (using AWS S3)
+        {
+            path: "/",
+            localPath: "www",
+        },
+
+        // Serve a simple REST API on `GET /name` (using AWS Lambda)
+        {
+            path: "/source",
+            method: "GET",
+            eventHandler: (req, ctx, cb) => {
+                cb(undefined, {
+                    statusCode: 200,
+                    body: Buffer.from(JSON.stringify({ name: "AWS" }), "utf8").toString("base64"),
+                    isBase64Encoded: true,
+                    headers: { "content-type": "application/json" },
+                })
+            }
+        }
+    ]
+});
+
 // Export the public URL for the HTTP service
-exports.url = endpoint.publish().url;
+exports.url = endpoint.url;
 ```
 
 See the [reference documentation](/reference/index.html) for details on the APIs we're using.
@@ -70,16 +86,16 @@ See the [reference documentation](/reference/index.html) for details on the APIs
 The stack is ready to deploy, which is done as follows:
 
 ```bash
-pulumi update
+pulumi up
 ```
 
 This command instructs Pulumi to determine the resources needed to create the stack. First, a preview is shown of the changes that will be made:
 
-![Stack preview](/images/quickstart/hello/Quickstart3.png){:width="700px"}
+![Stack preview](https://user-images.githubusercontent.com/4564579/46554998-da6c9980-c896-11e8-8530-6ca4c8db8123.png){:width="700px"}
 
 Choosing `yes` will create resources in AWS. This may take a minute or two.
 
-![Stack update](/images/quickstart/hello/Quickstart4.png){:width="700px"}
+![Stack update](https://user-images.githubusercontent.com/4564579/46555042-fcfeb280-c896-11e8-8731-51c9ee78af23.png){:width="700px"}
 
 Since there was a stack export (via `exports.url` in the code), this is printed in the output of `pulumi update`. We can easily `curl` this URL via `pulumi stack output`:
 
