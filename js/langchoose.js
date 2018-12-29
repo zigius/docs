@@ -29,13 +29,17 @@ function selectLanguage(lang) {
         if (langTabs > 0) {
             // Highlighted code blocks:
             $("div").each(function (i, e) {
+                // Now see if this is a language block.
                 var classes = getElemClasses(e);
                 for (var i = 0; i < classes.length; i++) {
                     if (classes[i].startsWith("language-") && classes[i] !== "language-bash") {
-                        if (classes[i] === "language-"+lang) {
-                            $(e).show();
-                        } else {
-                            $(e).hide();
+                        // Skip code blocks inside of API docs, as they have been appropriately filtered already.
+                        if ($(e).parents(".pdoc-module-contents").length === 0) {
+                            if (classes[i] === "language-"+lang) {
+                                $(e).show();
+                            } else {
+                                $(e).hide();
+                            }
                         }
                         break;
                     }

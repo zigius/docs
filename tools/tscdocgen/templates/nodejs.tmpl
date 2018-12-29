@@ -73,14 +73,14 @@ import * as {{PackageVar}} from "{{Package}}";
 {{#CodeDetails}}
 <pre class="highlight">{{{CodeDetails}}}</pre>
 {{/CodeDetails}}
-{{#Comment.ShortText}}
+{{#CommentShortText}}
 
-{{{Comment.ShortText}}}
+{{{CommentShortText}}}
 
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
+{{#CommentText}}
+{{{CommentText}}}
+{{/CommentText}}
+{{/CommentShortText}}
 {{#Children}}
 <h3 class="pdoc-member-header" id="{{AnchorName}}">
 <a class="pdoc-child-name" href="{{RepoURL}}">{{{Label}}} <b>{{{Name}}}</b></a>
@@ -93,29 +93,29 @@ import * as {{PackageVar}} from "{{Package}}";
 
 <pre class="highlight">{{{Label}}}</pre>
 
-{{#Comment.ShortText}}
+{{#CommentShortText}}
 
-{{{Comment.ShortText}}}
+{{{CommentShortText}}}
 
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
+{{#CommentText}}
+{{{CommentText}}}
+{{/CommentText}}
+{{/CommentShortText}}
 {{#Parameters}}
-{{#Comment.ShortText}}
-* `{{Name}}` {{Comment.ShortText}}
-{{/Comment.ShortText}}
+{{#CommentShortText}}
+* `{{Name}}` {{CommentShortText}}
+{{/CommentShortText}}
 {{/Parameters}}
 {{/Signatures}}
 {{^Signatures}}
-{{#Comment.ShortText}}
+{{#CommentShortText}}
 
-{{{Comment.ShortText}}}
+{{{CommentShortText}}}
 
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
+{{#CommentText}}
+{{{CommentText}}}
+{{/CommentText}}
+{{/CommentShortText}}
 {{/Signatures}}
 </div>
 {{/Children}}
@@ -123,18 +123,18 @@ import * as {{PackageVar}} from "{{Package}}";
 
 <pre class="highlight">{{{Label}}}</pre>
 
-{{#Comment.ShortText}}
+{{#CommentShortText}}
 
-{{{Comment.ShortText}}}
+{{{CommentShortText}}}
 
-{{#Comment.Text}}
-{{{Comment.Text}}}
-{{/Comment.Text}}
-{{/Comment.ShortText}}
+{{#CommentText}}
+{{{CommentText}}}
+{{/CommentText}}
+{{/CommentShortText}}
 {{#Parameters}}
-{{#Comment.ShortText}}
-* `{{Name}}` {{Comment.ShortText}}
-{{/Comment.ShortText}}
+{{#CommentShortText}}
+* `{{Name}}` {{CommentShortText}}
+{{/CommentShortText}}
 {{/Parameters}}
 {{/Signatures}}
 </div>
