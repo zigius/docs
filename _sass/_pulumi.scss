@@ -35,16 +35,16 @@ $primary2: #00acf2; // primary blue
     @media(min-width: $screen-md){
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 120px;
         transform: translateY(-50%);
     }
-    
+
     padding-left: 8px;
 
     // Just make the two elements adjacent to each other.
     display: flex;
     height: 38px;
-    
+
     input {
         outline: 0;
         border: 0;
@@ -60,12 +60,28 @@ $primary2: #00acf2; // primary blue
     button {
         i { color: white; }  // The FontAwesome icon.
         outline: 0;
-        border: 0;
+        border: 1px solid #007dbf;
+        border-radius: 3px;
 
         background-color: $primary2;
 
         padding: 7px 21px;
         width: 100px;
+    }
+    button:hover {
+        background-color: #66deff;
+    }
+}
+
+#right-nav-block {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+@media(max-width: $screen-md){
+    #sign-in-button {
+        display: none;
     }
 }
 
@@ -144,10 +160,10 @@ $accent4: #fbe5d7; // light orange
     font-weight: bold;
     color: $primary2;
     background-color: #fff;
-    border: 1px solid $primary2;
+    border: 1px solid #007dbf;
 }
 .button:hover {
-    background-color: $primary2;
+    background-color: #66deff;
 }
 
 .button.small {
@@ -160,8 +176,8 @@ $accent4: #fbe5d7; // light orange
     background-color: $primary2;
 }
 .button.primary:hover {
-    border: 1px solid $primary;
-    background-color: $primary;
+    border: 1px solid #007dbf;
+    background-color: #66deff;
 }
 
 // Don't have SVG icons default to black. Just use current text color.
@@ -406,8 +422,6 @@ h4 { font-size: 22px; font-weight: 500; }
 }
 
 .toc {
-    border: 1px solid rgba(0,0,0,.12);
-    background-color: #f0f0f0;
     padding: 8px;
     margin-right: 16px;
 
@@ -426,7 +440,6 @@ h4 { font-size: 22px; font-weight: 500; }
     }
 
     .sidenav-section {
-        font-size: 16px;
         line-height: 20px;
         padding: 8px 0;
     }
@@ -451,7 +464,6 @@ h4 { font-size: 22px; font-weight: 500; }
     }
 
     .sidenav-subsection {
-        font-size: 14px;
         padding: 16px;
     }
 
@@ -460,9 +472,23 @@ h4 { font-size: 22px; font-weight: 500; }
     }
 }
 
-// The Table of Contents is displayed in a hamberger menu visible when on
+// Add some special styling for the TOC when not on mobile. This shouldn't
+// be applied to mobile because (as per the following block), we use a hamburger
+// instead and don't want this specific styling.
+@media (min-width: $MOBILE-WIDTH) {
+    border: 1px solid rgba(0,0,0,.12);
+    background-color: #f0f0f0;
+    .sidenav-section {
+        font-size: 16px;
+    }
+    .sidenav-subsection {
+        font-size: 14px;
+    }
+}
+
+// The Table of Contents is displayed in a hamburger menu visible when on
 // a small screen. We style it very differently than the regular .toc
-// so that it matches the display of other items in the hamberger menu.
+// so that it matches the display of other items in the hamburger menu.
 .toc-in-nav {
     // Copied from _header.scss .main-nav.
     padding-bottom: 27px;
@@ -472,6 +498,7 @@ h4 { font-size: 22px; font-weight: 500; }
     margin-right: 0 !important;
 
     color: #fff;
+    background-color: $purple-mid;
 
     .sidenav-section {
         font-weight: 500;
