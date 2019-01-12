@@ -406,6 +406,9 @@ h4 { font-size: 22px; font-weight: 500; }
 }
 
 .toc {
+    border: 1px solid rgba(0,0,0,.12);
+    background-color: #f0f0f0;
+    padding: 8px;
     margin-right: 16px;
 
     // Render links like headings.
@@ -423,7 +426,7 @@ h4 { font-size: 22px; font-weight: 500; }
     }
 
     .sidenav-section {
-        font-size: 13px;
+        font-size: 16px;
         line-height: 20px;
         padding: 8px 0;
     }
@@ -444,11 +447,12 @@ h4 { font-size: 22px; font-weight: 500; }
         a {
             font-weight: bold !important;
         }
-        background-color: $accent4;
+        color: $primary;
     }
 
     .sidenav-subsection {
-        padding: 8px 0 0 16px;
+        font-size: 14px;
+        padding: 16px;
     }
 
     .sidenav-subsection a {
@@ -700,6 +704,43 @@ h4 { font-size: 22px; font-weight: 500; }
 .toggle > .expanded { display: none; }
 .toggleVisible > .collapsed { display: none; }
 .toggleVisible > .expanded { display: block; }
+
+// Mini table of contents styling.
+.mini-toc p {
+    font-size: 18px;
+    color: #707070;
+    font-weight: 700;
+    margin: 0px;
+}
+.mini-toc ul {
+    padding: 16px;
+    margin: 0;
+}
+.mini-toc ul li {
+    list-style: none;
+    margin: 0 0 .7em;
+    padding: 0 0 0 17px;
+}
+.mini-toc ul li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    border-radius: 50%;
+    background: $primary2;
+}
+.mini-toc ul li:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 1px;
+    left: 0;
+    bottom: 18px;
+    border-left: 1px solid #bbecff; /*lightened primary2 blue*/
+}
 
 //  Widget showing the downloads for Pulumi.
 .downloads-container {
