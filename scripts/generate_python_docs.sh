@@ -9,6 +9,11 @@ PACKAGES=(
   "pulumi_azure"
   "pulumi_gcp"
   "pulumi_random"
+  "pulumi_vsphere"
+  "pulumi_openstack"
+  "pulumi_f5bigip"
+  "pulumi_packet"
+  "pulumi_kubernetes"
 )
 
 run_pydocgen() {
