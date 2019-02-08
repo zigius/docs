@@ -14,14 +14,18 @@ toc:
    - quickstart/aws/tutorial-containers-ecs-fargate.md
    - quickstart/aws/tutorial-ec2-webserver.md
    - quickstart/aws/tutorial-s3-website.md
+   - quickstart/aws/tutorial-eks.md
 - title: Microsoft Azure
   path: /quickstart/azure/index
   section:
    - quickstart/azure/setup.md
+   - quickstart/azure/tutorial-container-webserver.md
 - title: Google Cloud Platform
   path: /quickstart/gcp/index
   section:
    - quickstart/gcp/setup.md
+   - quickstart/gcp/tutorial-gce-webserver.md
+   - quickstart/gcp/tutorial-gke.md
 - title: Kubernetes
   path: /quickstart/kubernetes/index
   section:
