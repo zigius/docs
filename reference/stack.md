@@ -80,7 +80,7 @@ Use `pulumi stack select` to change stack; `pulumi stack ls` lists known ones
 
 ## View stack outputs {#outputs}
 
-When you use module exports in your Pulumi program, they become stack outputs. Stack outputs can be viewed via `pulumi stack output` and are shown on the stack information page on pulumi.com.
+When you use top-level exports in your Pulumi [program](/reference/programming-model.html#programs), they become [stack outputs](/reference/programming-model.html#stack-outputs). Stack outputs can be viewed via `pulumi stack output` and are shown on the stack information page on pulumi.com.
 
 **JavaScript code**
 ```js
@@ -128,6 +128,8 @@ To force the deletion of a stack that still contains resources --- potentially o
 ## Stack tags
 
 Stacks have associated metadata in the form of tags, with each tag consisting of a name and value. A set of built-in tags are automatically assigned and updated each time a stack is updated (such as `pulumi:project`, `pulumi:runtime`, `pulumi:description`, `gitHub:owner`, `gitHub:repo`, `vcs:owner`, `vcs:repo`, and `vcs:kind`). To view a stack's tags, run [`pulumi stack tag ls`](/reference/cli/pulumi_stack_tag_ls.html).
+
+> **Note:** Stack tags are only supported when logged into the [web backend](https://pulumi.io/reference/state.html).
 
 Custom tags can be assigned to a stack by running [`pulumi stack tag set <name> <value>`](/reference/cli/pulumi_stack_tag_set.html) and can be used to customize the grouping of stacks in the [Pulumi Cloud Console](https://app.pulumi.com). For example, if you have many projects with separate stacks for production, staging, and testing environments, it may be useful to group stacks by environment instead of by project. To do this, you could assign a custom tag named `environment` to each stack. For example, running `pulumi stack tag set environment production` assigns a custom `environment` tag with a value of `production` to the active stack. Once you've assigned an `environment` tag to each stack, you'll be able to group by `Tag: environment` in the Pulumi Cloud Console.
 

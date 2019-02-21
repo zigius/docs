@@ -2,15 +2,15 @@
 <span id="loadbalancer"></span><h1>loadbalancer<a class="headerlink" href="#module-pulumi_openstack.loadbalancer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.L7PolicyV2">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">L7PolicyV2</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>action=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>listener_id=None</em>, <em>name=None</em>, <em>position=None</em>, <em>redirect_pool_id=None</em>, <em>redirect_url=None</em>, <em>region=None</em>, <em>tenant_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7PolicyV2" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">L7PolicyV2</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>action=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>listener_id=None</em>, <em>name=None</em>, <em>position=None</em>, <em>redirect_pool_id=None</em>, <em>redirect_url=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7PolicyV2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a Load Balancer L7 Policy resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>action</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The L7 Policy action - can either be REDIRECT_TO_POOL,
 REDIRECT_TO_URL or REJECT.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the L7 Policy.
@@ -27,7 +27,7 @@ pool with this ID. Only valid if action is REDIRECT_TO_POOL.</li>
 Only valid if action is REDIRECT_TO_URL.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 L7 Policy.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
 the L7 Policy.  Only administrative users can specify a tenant UUID
@@ -96,7 +96,7 @@ Only valid if action is REDIRECT_TO_URL.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7PolicyV2.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 L7 Policy.</p>
 </dd></dl>
 
@@ -150,15 +150,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.L7RuleV2">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">L7RuleV2</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>compare_type=None</em>, <em>invert=None</em>, <em>key=None</em>, <em>l7policy_id=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>type=None</em>, <em>value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7RuleV2" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">L7RuleV2</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>compare_type=None</em>, <em>invert=None</em>, <em>key=None</em>, <em>l7policy_id=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>type=None</em>, <em>value=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7RuleV2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 L7 Rule resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the L7 Rule.
 A valid value is true (UP) or false (DOWN).</li>
 <li><strong>compare_type</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The comparison type for the L7 rule - can either be
@@ -166,12 +166,12 @@ CONTAINS, STARTS_WITH, ENDS_WITH, EQUAL_TO or REGEX</li>
 <li><strong>invert</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – When true the logic of the rule is inverted. For example, with invert
 true, equal to would become not equal to. Default is false.</li>
 <li><strong>key</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The key to use for the comparison. For example, the name of the cookie to
-evaluate. Valid when <cite>type</cite> is set to COOKIE or HEADER.</li>
+evaluate. Valid when <code class="docutils literal notranslate"><span class="pre">type</span></code> is set to COOKIE or HEADER.</li>
 <li><strong>l7policy_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The ID of the L7 Policy to query. Changing this creates a new
 L7 Rule.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 L7 Rule.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
 the L7 Rule.  Only administrative users can specify a tenant UUID
@@ -210,7 +210,7 @@ true, equal to would become not equal to. Default is false.</p>
 <dt id="pulumi_openstack.loadbalancer.L7RuleV2.key">
 <code class="descname">key</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7RuleV2.key" title="Permalink to this definition">¶</a></dt>
 <dd><p>The key to use for the comparison. For example, the name of the cookie to
-evaluate. Valid when <cite>type</cite> is set to COOKIE or HEADER.</p>
+evaluate. Valid when <code class="docutils literal notranslate"><span class="pre">type</span></code> is set to COOKIE or HEADER.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -231,7 +231,7 @@ L7 Rule.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.L7RuleV2.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 L7 Rule.</p>
 </dd></dl>
 
@@ -299,15 +299,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.Listener">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Listener</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>connection_limit=None</em>, <em>default_pool_id=None</em>, <em>default_tls_container_ref=None</em>, <em>description=None</em>, <em>loadbalancer_id=None</em>, <em>name=None</em>, <em>protocol=None</em>, <em>protocol_port=None</em>, <em>region=None</em>, <em>sni_container_refs=None</em>, <em>tenant_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Listener" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Listener</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>connection_limit=None</em>, <em>default_pool_id=None</em>, <em>default_tls_container_ref=None</em>, <em>description=None</em>, <em>loadbalancer_id=None</em>, <em>name=None</em>, <em>protocol=None</em>, <em>protocol_port=None</em>, <em>region=None</em>, <em>sni_container_refs=None</em>, <em>tenant_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Listener" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 listener resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the Listener.
 A valid value is true (UP) or false (DOWN).</li>
 <li><strong>connection_limit</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – The maximum number of connections allowed
@@ -316,8 +316,8 @@ for the Listener.</li>
 Listener is associated.</li>
 <li><strong>default_tls_container_ref</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – A reference to a Barbican Secrets
 container which stores TLS information. This is required if the protocol
-is <cite>TERMINATED_HTTPS</cite>. See
-[here](<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer</a>)
+is <code class="docutils literal notranslate"><span class="pre">TERMINATED_HTTPS</span></code>. See
+<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">here</a>
 for more information.</li>
 <li><strong>description</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Human-readable description for the Listener.</li>
 <li><strong>loadbalancer_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The load balancer on which to provision this
@@ -330,12 +330,13 @@ Changing this creates a new Listener.</li>
 Changing this creates a new Listener.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 Listener.</li>
-<li><strong>sni_container_refs</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – A list of references to Barbican Secrets
+<li><strong>sni_container_refs</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – <p>A list of references to Barbican Secrets
 containers which store SNI information. See
-[here](<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer</a>)
-for more information.</li>
+<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">here</a>
+for more information.</p>
+</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
 the Listener.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new Listener.</li>
@@ -370,8 +371,8 @@ Listener is associated.</p>
 <code class="descname">default_tls_container_ref</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Listener.default_tls_container_ref" title="Permalink to this definition">¶</a></dt>
 <dd><p>A reference to a Barbican Secrets
 container which stores TLS information. This is required if the protocol
-is <cite>TERMINATED_HTTPS</cite>. See
-[here](<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer</a>)
+is <code class="docutils literal notranslate"><span class="pre">TERMINATED_HTTPS</span></code>. See
+<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">here</a>
 for more information.</p>
 </dd></dl>
 
@@ -414,7 +415,7 @@ Changing this creates a new Listener.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Listener.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 Listener.</p>
 </dd></dl>
 
@@ -423,7 +424,7 @@ Listener.</p>
 <code class="descname">sni_container_refs</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Listener.sni_container_refs" title="Permalink to this definition">¶</a></dt>
 <dd><p>A list of references to Barbican Secrets
 containers which store SNI information. See
-[here](<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer</a>)
+<a class="reference external" href="https://wiki.openstack.org/wiki/Network/LBaaS/docs/how-to-create-tls-loadbalancer">here</a>
 for more information.</p>
 </dd></dl>
 
@@ -477,15 +478,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.LoadBalancer">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">LoadBalancer</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>flavor=None</em>, <em>loadbalancer_provider=None</em>, <em>name=None</em>, <em>region=None</em>, <em>security_group_ids=None</em>, <em>tenant_id=None</em>, <em>vip_address=None</em>, <em>vip_subnet_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.LoadBalancer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">LoadBalancer</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>flavor=None</em>, <em>loadbalancer_provider=None</em>, <em>name=None</em>, <em>region=None</em>, <em>security_group_ids=None</em>, <em>tenant_id=None</em>, <em>vip_address=None</em>, <em>vip_subnet_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.LoadBalancer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 loadbalancer resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the Loadbalancer.
 A valid value is true (UP) or false (DOWN).</li>
 <li><strong>description</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Human-readable description for the Loadbalancer.</li>
@@ -497,7 +498,7 @@ creates a new loadbalancer.</li>
 to be unique.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB member. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB member.</li>
 <li><strong>security_group_ids</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – A list of security group IDs to apply to the
 loadbalancer. The security groups must be specified by ID and not name (as
@@ -555,7 +556,7 @@ to be unique.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.LoadBalancer.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB member. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB member.</p>
 </dd></dl>
 
@@ -639,15 +640,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.Member">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Member</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>name=None</em>, <em>pool_id=None</em>, <em>protocol_port=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em>, <em>weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Member" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Member</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>name=None</em>, <em>pool_id=None</em>, <em>protocol_port=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em>, <em>weight=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Member" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 member resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>address</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The IP address of the member to receive traffic from
 the load balancer. Changing this creates a new member.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the member.
@@ -659,7 +660,7 @@ assigned to.</li>
 Changing this creates a new member.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 member.</li>
 <li><strong>subnet_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The subnet in which to access the member</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
@@ -713,7 +714,7 @@ Changing this creates a new member.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Member.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 member.</p>
 </dd></dl>
 
@@ -782,15 +783,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.MemberV1">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">MemberV1</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>pool_id=None</em>, <em>port=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.MemberV1" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">MemberV1</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>pool_id=None</em>, <em>port=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>weight=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.MemberV1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V1 load balancer member resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>address</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The IP address of the member. Changing this creates a
 new member.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the member.
@@ -802,7 +803,7 @@ member.</li>
 hosted. Changing this creates a new member.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB member. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB member.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The owner of the member. Required if admin wants to
 create a member for another tenant. Changing this creates a new member.</li>
@@ -847,7 +848,7 @@ hosted. Changing this creates a new member.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.MemberV1.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB member. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB member.</p>
 </dd></dl>
 
@@ -907,15 +908,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.Monitor">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>delay=None</em>, <em>expected_codes=None</em>, <em>http_method=None</em>, <em>max_retries=None</em>, <em>name=None</em>, <em>pool_id=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>timeout=None</em>, <em>type=None</em>, <em>url_path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Monitor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>delay=None</em>, <em>expected_codes=None</em>, <em>http_method=None</em>, <em>max_retries=None</em>, <em>name=None</em>, <em>pool_id=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>timeout=None</em>, <em>type=None</em>, <em>url_path=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Monitor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 monitor resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).</li>
 <li><strong>delay</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – The time, in seconds, between sending probes to members.</li>
@@ -932,7 +933,7 @@ and 10..</li>
 <li><strong>pool_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The id of the pool that this monitor will be assigned to.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 monitor.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
@@ -1004,7 +1005,7 @@ and 10..</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Monitor.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 monitor.</p>
 </dd></dl>
 
@@ -1081,15 +1082,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.MonitorV1">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">MonitorV1</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>delay=None</em>, <em>expected_codes=None</em>, <em>http_method=None</em>, <em>max_retries=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>timeout=None</em>, <em>type=None</em>, <em>url_path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.MonitorV1" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">MonitorV1</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>delay=None</em>, <em>expected_codes=None</em>, <em>http_method=None</em>, <em>max_retries=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>timeout=None</em>, <em>type=None</em>, <em>url_path=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.MonitorV1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V1 load balancer monitor resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The administrative state of the monitor.
 Acceptable values are “true” and “false”. Changing this value updates the
 state of the existing monitor.</li>
@@ -1107,7 +1108,7 @@ the member’s status to INACTIVE. Must be a number between 1 and 10. Changing
 this updates the max_retries of the existing monitor.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB monitor. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB monitor.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The owner of the monitor. Required if admin wants to
 create a monitor for another tenant. Changing this creates a new monitor.</li>
@@ -1170,7 +1171,7 @@ this updates the max_retries of the existing monitor.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.MonitorV1.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB monitor. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB monitor.</p>
 </dd></dl>
 
@@ -1247,15 +1248,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.Pool">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>lb_method=None</em>, <em>listener_id=None</em>, <em>loadbalancer_id=None</em>, <em>name=None</em>, <em>persistences=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>tenant_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Pool" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>admin_state_up=None</em>, <em>description=None</em>, <em>lb_method=None</em>, <em>listener_id=None</em>, <em>loadbalancer_id=None</em>, <em>name=None</em>, <em>persistences=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>tenant_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Pool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V2 pool resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the pool.
 A valid value is true (UP) or false (DOWN).</li>
 <li><strong>description</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Human-readable description for the pool.</li>
@@ -1275,7 +1276,7 @@ member or not. Changing this creates a new pool.</li>
 <li><strong>protocol</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – See Argument Reference above.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 pool.</li>
 <li><strong>tenant_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Required for admins. The UUID of the tenant who owns
 the pool.  Only administrative users can specify a tenant UUID
@@ -1347,7 +1348,7 @@ member or not. Changing this creates a new pool.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Pool.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 pool.</p>
 </dd></dl>
 
@@ -1401,20 +1402,21 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.PoolV1">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">PoolV1</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>lb_method=None</em>, <em>lb_provider=None</em>, <em>monitor_ids=None</em>, <em>name=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.PoolV1" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">PoolV1</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>lb_method=None</em>, <em>lb_provider=None</em>, <em>monitor_ids=None</em>, <em>name=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.PoolV1" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V1 load balancer pool resource within OpenStack.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">member</span></code> block is deprecated in favor of the <code class="docutils literal notranslate"><span class="pre">openstack_lb_member_v1</span></code> resource.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>lb_method</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The algorithm used to distribute load between the
 members of the pool. The current specification supports ‘ROUND_ROBIN’ and
 ‘LEAST_CONNECTIONS’ as valid values for this attribute.</li>
 <li><strong>lb_provider</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The backend load balancing provider. For example:
-<cite>haproxy</cite>, <cite>F5</cite>, etc.</li>
+<code class="docutils literal notranslate"><span class="pre">haproxy</span></code>, <code class="docutils literal notranslate"><span class="pre">F5</span></code>, etc.</li>
 <li><strong>monitor_ids</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – A list of IDs of monitors to associate with the
 pool.</li>
 <li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The name of the pool. Changing this updates the name of
@@ -1423,7 +1425,7 @@ the existing pool.</li>
 either ‘TCP, ‘HTTP’, or ‘HTTPS’. Changing this creates a new pool.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB pool. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB pool.</li>
 <li><strong>subnet_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The network on which the members of the pool will be
 located. Only members that are on this network can be added to the pool.
@@ -1447,7 +1449,7 @@ members of the pool. The current specification supports ‘ROUND_ROBIN’ and
 <dt id="pulumi_openstack.loadbalancer.PoolV1.lb_provider">
 <code class="descname">lb_provider</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.PoolV1.lb_provider" title="Permalink to this definition">¶</a></dt>
 <dd><p>The backend load balancing provider. For example:
-<cite>haproxy</cite>, <cite>F5</cite>, etc.</p>
+<code class="docutils literal notranslate"><span class="pre">haproxy</span></code>, <code class="docutils literal notranslate"><span class="pre">F5</span></code>, etc.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -1476,7 +1478,7 @@ either ‘TCP, ‘HTTP’, or ‘HTTPS’. Changing this creates a new pool.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.PoolV1.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an LB pool. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 LB pool.</p>
 </dd></dl>
 
@@ -1537,15 +1539,15 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_openstack.loadbalancer.Vip">
-<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Vip</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>conn_limit=None</em>, <em>description=None</em>, <em>floating_ip=None</em>, <em>name=None</em>, <em>persistence=None</em>, <em>pool_id=None</em>, <em>port=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Vip" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_openstack.loadbalancer.</code><code class="descname">Vip</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>address=None</em>, <em>admin_state_up=None</em>, <em>conn_limit=None</em>, <em>description=None</em>, <em>floating_ip=None</em>, <em>name=None</em>, <em>persistence=None</em>, <em>pool_id=None</em>, <em>port=None</em>, <em>protocol=None</em>, <em>region=None</em>, <em>subnet_id=None</em>, <em>tenant_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_openstack.loadbalancer.Vip" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages a V1 load balancer vip resource within OpenStack.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>address</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The IP address of the vip. Changing this creates a new
 vip.</li>
 <li><strong>admin_state_up</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – The administrative state of the vip.
@@ -1571,7 +1573,7 @@ this creates a new vip.</li>
 HTTPS’. Changing this creates a new vip.</li>
 <li><strong>region</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VIP. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 VIP.</li>
 <li><strong>subnet_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – The network on which to allocate the vip’s address. A
 tenant can only create vips on networks authorized by policy (e.g. networks
@@ -1668,7 +1670,7 @@ HTTPS’. Changing this creates a new vip.</p>
 <code class="descname">region</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_openstack.loadbalancer.Vip.region" title="Permalink to this definition">¶</a></dt>
 <dd><p>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create a VIP. If omitted, the
-<cite>region</cite> argument of the provider is used. Changing this creates a new
+<code class="docutils literal notranslate"><span class="pre">region</span></code> argument of the provider is used. Changing this creates a new
 VIP.</p>
 </dd></dl>
 

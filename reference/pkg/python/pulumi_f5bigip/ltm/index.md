@@ -2,19 +2,19 @@
 <span id="ltm"></span><h1>ltm<a class="headerlink" href="#module-pulumi_f5bigip.ltm" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.DataGroup">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">DataGroup</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>name=None</em>, <em>records=None</em>, <em>type=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.DataGroup" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_datagroup</cite> Manages internal (in-line) datagroup configuration</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">DataGroup</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>name=None</em>, <em>records=None</em>, <em>type=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.DataGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_datagroup</span></code> Manages internal (in-line) datagroup configuration</p>
 <p>Resource should be named with their “full path”. The full path is the combination of the partition + name of the resource, for example /Common/my-datagroup.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
-<li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – , sets the value of the record’s <cite>name</cite> attribute, must be of type defined in <cite>type</cite> attribute</li>
-<li><strong>records</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – a set of <cite>name</cite> and <cite>data</cite> attributes, name must be of type specified by the <cite>type</cite> attributed (<cite>string</cite>, <cite>ip</cite> and <cite>integer</cite>), data is optional and can take any value, multiple <cite>record</cite> sets can be specified as needed.</li>
-<li><strong>type</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – datagroup type (applies to the <cite>name</cite> field of the record), supports: <cite>string</cite>, <cite>ip</cite> or <cite>integer</cite></li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – , sets the value of the record’s <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute, must be of type defined in <code class="docutils literal notranslate"><span class="pre">type</span></code> attribute</li>
+<li><strong>records</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – a set of <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span></code> attributes, name must be of type specified by the <code class="docutils literal notranslate"><span class="pre">type</span></code> attributed (<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">ip</span></code> and <code class="docutils literal notranslate"><span class="pre">integer</span></code>), data is optional and can take any value, multiple <code class="docutils literal notranslate"><span class="pre">record</span></code> sets can be specified as needed.</li>
+<li><strong>type</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – datagroup type (applies to the <code class="docutils literal notranslate"><span class="pre">name</span></code> field of the record), supports: <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">ip</span></code> or <code class="docutils literal notranslate"><span class="pre">integer</span></code></li>
 </ul>
 </td>
 </tr>
@@ -23,19 +23,19 @@
 <dl class="attribute">
 <dt id="pulumi_f5bigip.ltm.DataGroup.name">
 <code class="descname">name</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_f5bigip.ltm.DataGroup.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>, sets the value of the record’s <cite>name</cite> attribute, must be of type defined in <cite>type</cite> attribute</p>
+<dd><p>, sets the value of the record’s <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute, must be of type defined in <code class="docutils literal notranslate"><span class="pre">type</span></code> attribute</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pulumi_f5bigip.ltm.DataGroup.records">
 <code class="descname">records</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_f5bigip.ltm.DataGroup.records" title="Permalink to this definition">¶</a></dt>
-<dd><p>a set of <cite>name</cite> and <cite>data</cite> attributes, name must be of type specified by the <cite>type</cite> attributed (<cite>string</cite>, <cite>ip</cite> and <cite>integer</cite>), data is optional and can take any value, multiple <cite>record</cite> sets can be specified as needed.</p>
+<dd><p>a set of <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">data</span></code> attributes, name must be of type specified by the <code class="docutils literal notranslate"><span class="pre">type</span></code> attributed (<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">ip</span></code> and <code class="docutils literal notranslate"><span class="pre">integer</span></code>), data is optional and can take any value, multiple <code class="docutils literal notranslate"><span class="pre">record</span></code> sets can be specified as needed.</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="pulumi_f5bigip.ltm.DataGroup.type">
 <code class="descname">type</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_f5bigip.ltm.DataGroup.type" title="Permalink to this definition">¶</a></dt>
-<dd><p>datagroup type (applies to the <cite>name</cite> field of the record), supports: <cite>string</cite>, <cite>ip</cite> or <cite>integer</cite></p>
+<dd><p>datagroup type (applies to the <code class="docutils literal notranslate"><span class="pre">name</span></code> field of the record), supports: <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">ip</span></code> or <code class="docutils literal notranslate"><span class="pre">integer</span></code></p>
 </dd></dl>
 
 <dl class="method">
@@ -80,16 +80,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.IRule">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">IRule</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>irule=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.IRule" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_irule</cite> Creates iRule on BIG-IP F5 device</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">IRule</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>irule=None</em>, <em>name=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.IRule" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_irule</span></code> Creates iRule on BIG-IP F5 device</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>irule</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Body of the iRule</li>
 <li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Name of the iRule</li>
 </ul>
@@ -151,16 +151,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.Monitor">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>defaults_from=None</em>, <em>destination=None</em>, <em>interval=None</em>, <em>ip_dscp=None</em>, <em>manual_resume=None</em>, <em>name=None</em>, <em>parent=None</em>, <em>receive=None</em>, <em>receive_disable=None</em>, <em>reverse=None</em>, <em>send=None</em>, <em>time_until_up=None</em>, <em>timeout=None</em>, <em>transparent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Monitor" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_monitor</cite> Configures a custom monitor for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Monitor</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>defaults_from=None</em>, <em>destination=None</em>, <em>interval=None</em>, <em>ip_dscp=None</em>, <em>manual_resume=None</em>, <em>name=None</em>, <em>parent=None</em>, <em>receive=None</em>, <em>receive_disable=None</em>, <em>reverse=None</em>, <em>send=None</em>, <em>time_until_up=None</em>, <em>timeout=None</em>, <em>transparent=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Monitor" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_monitor</span></code> Configures a custom monitor for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -264,16 +264,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.Node">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Node</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>address=None</em>, <em>connection_limit=None</em>, <em>dynamic_ratio=None</em>, <em>fqdns=None</em>, <em>monitor=None</em>, <em>name=None</em>, <em>rate_limit=None</em>, <em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Node" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_node</cite> Manages a node configuration</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Node</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>address=None</em>, <em>connection_limit=None</em>, <em>dynamic_ratio=None</em>, <em>fqdns=None</em>, <em>monitor=None</em>, <em>name=None</em>, <em>rate_limit=None</em>, <em>state=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Node" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_node</span></code> Manages a node configuration</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>address</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – IP or hostname of the node</li>
 </ul>
 </td>
@@ -347,33 +347,32 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.PersistenceProfileCookie">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileCookie</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>always_send=None</em>, <em>app_service=None</em>, <em>cookie_encryption=None</em>, <em>cookie_encryption_passphrase=None</em>, <em>cookie_name=None</em>, <em>defaults_from=None</em>, <em>expiration=None</em>, <em>hash_length=None</em>, <em>hash_offset=None</em>, <em>httponly=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileCookie" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileCookie</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>always_send=None</em>, <em>app_service=None</em>, <em>cookie_encryption=None</em>, <em>cookie_encryption_passphrase=None</em>, <em>cookie_name=None</em>, <em>defaults_from=None</em>, <em>expiration=None</em>, <em>hash_length=None</em>, <em>hash_offset=None</em>, <em>httponly=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileCookie" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures a cookie persistence profile</p>
-<p>## Reference</p>
-<p><cite>name</cite> - (Required) Name of the virtual address</p>
-<p><cite>defaults_from</cite> - (Required) Parent cookie persistence profile</p>
-<p><cite>match_across_pools</cite> (Optional) (enabled or disabled) match across pools with given persistence record</p>
-<p><cite>match_across_services</cite> (Optional) (enabled or disabled) match across services with given persistence record</p>
-<p><cite>match_across_virtuals</cite> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
-<p><cite>mirror</cite> (Optional) (enabled or disabled) mirror persistence record</p>
-<p><cite>timeout</cite> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
-<p><cite>override_conn_limit</cite> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
-<p><cite>always_send</cite> (Optional) (enabled or disabled) always send cookies</p>
-<p><cite>cookie_encryption</cite> (Optional) (required, preferred, or disabled) To required, preferred, or disabled policy for cookie encryption</p>
-<p><cite>cookie_encryption_passphrase</cite> (Optional) (required, preferred, or disabled) Passphrase for encrypted cookies. The field is encrypted on the server and will always return differently then set.
-If this is configured specify <cite>ignore_changes</cite> under the <cite>lifecycle</cite> block to ignore returned encrypted value.</p>
-<p><cite>cookie_name</cite> (Optional) Name of the cookie to track persistence</p>
-<p><cite>expiration</cite> (Optional) Expiration TTL for cookie specified in DAY:HOUR:MIN:SECONDS (Examples: 1:0:0:0 one day, 1:0:0 one hour, 30:0 thirty minutes)</p>
-<p><cite>hash_length</cite> (Optional) (Integer) Length of hash to apply to cookie</p>
-<p><cite>hash_offset</cite> (Optional) (Integer) Number of characters to skip in the cookie for the hash</p>
-<p><cite>httponly</cite> (Optional) (enabled or disabled) Sending only over http</p>
+<p><code class="docutils literal notranslate"><span class="pre">name</span></code> - (Required) Name of the virtual address</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults_from</span></code> - (Required) Parent cookie persistence profile</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_pools</span></code> (Optional) (enabled or disabled) match across pools with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_services</span></code> (Optional) (enabled or disabled) match across services with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_virtuals</span></code> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">mirror</span></code> (Optional) (enabled or disabled) mirror persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
+<p><code class="docutils literal notranslate"><span class="pre">override_conn_limit</span></code> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
+<p><code class="docutils literal notranslate"><span class="pre">always_send</span></code> (Optional) (enabled or disabled) always send cookies</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookie_encryption</span></code> (Optional) (required, preferred, or disabled) To required, preferred, or disabled policy for cookie encryption</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookie_encryption_passphrase</span></code> (Optional) (required, preferred, or disabled) Passphrase for encrypted cookies. The field is encrypted on the server and will always return differently then set.
+If this is configured specify <code class="docutils literal notranslate"><span class="pre">ignore_changes</span></code> under the <code class="docutils literal notranslate"><span class="pre">lifecycle</span></code> block to ignore returned encrypted value.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cookie_name</span></code> (Optional) Name of the cookie to track persistence</p>
+<p><code class="docutils literal notranslate"><span class="pre">expiration</span></code> (Optional) Expiration TTL for cookie specified in DAY:HOUR:MIN:SECONDS (Examples: 1:0:0:0 one day, 1:0:0 one hour, 30:0 thirty minutes)</p>
+<p><code class="docutils literal notranslate"><span class="pre">hash_length</span></code> (Optional) (Integer) Length of hash to apply to cookie</p>
+<p><code class="docutils literal notranslate"><span class="pre">hash_offset</span></code> (Optional) (Integer) Number of characters to skip in the cookie for the hash</p>
+<p><code class="docutils literal notranslate"><span class="pre">httponly</span></code> (Optional) (enabled or disabled) Sending only over http</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -438,24 +437,23 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.PersistenceProfileDstAddr">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileDstAddr</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>hash_algorithm=None</em>, <em>mask=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileDstAddr" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileDstAddr</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>hash_algorithm=None</em>, <em>mask=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileDstAddr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures a cookie persistence profile</p>
-<p>## Reference</p>
-<p><cite>name</cite> - (Required) Name of the virtual address</p>
-<p><cite>defaults_from</cite> - (Optional) Specifies the existing profile from which the system imports settings for the new profile.</p>
-<p><cite>match_across_pools</cite> (Optional) (enabled or disabled) match across pools with given persistence record</p>
-<p><cite>match_across_services</cite> (Optional) (enabled or disabled) match across services with given persistence record</p>
-<p><cite>match_across_virtuals</cite> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
-<p><cite>mirror</cite> (Optional) (enabled or disabled) mirror persistence record</p>
-<p><cite>timeout</cite> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
-<p><cite>override_conn_limit</cite> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
+<p><code class="docutils literal notranslate"><span class="pre">name</span></code> - (Required) Name of the virtual address</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults_from</span></code> - (Optional) Specifies the existing profile from which the system imports settings for the new profile.</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_pools</span></code> (Optional) (enabled or disabled) match across pools with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_services</span></code> (Optional) (enabled or disabled) match across services with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_virtuals</span></code> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">mirror</span></code> (Optional) (enabled or disabled) mirror persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
+<p><code class="docutils literal notranslate"><span class="pre">override_conn_limit</span></code> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -514,27 +512,26 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.PersistenceProfileSrcAddr">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileSrcAddr</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>hash_algorithm=None</em>, <em>map_proxies=None</em>, <em>mask=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileSrcAddr" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileSrcAddr</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>hash_algorithm=None</em>, <em>map_proxies=None</em>, <em>mask=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileSrcAddr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures a source address persistence profile</p>
-<p>## Reference</p>
-<p><cite>name</cite> - (Required) Name of the virtual address</p>
-<p><cite>defaults_from</cite> - (Required) Parent cookie persistence profile</p>
-<p><cite>match_across_pools</cite> (Optional) (enabled or disabled) match across pools with given persistence record</p>
-<p><cite>match_across_services</cite> (Optional) (enabled or disabled) match across services with given persistence record</p>
-<p><cite>match_across_virtuals</cite> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
-<p><cite>mirror</cite> (Optional) (enabled or disabled) mirror persistence record</p>
-<p><cite>timeout</cite> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
-<p><cite>override_conn_limit</cite> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
-<p><cite>hash_algorithm</cite> (Optional) Specify the hash algorithm</p>
-<p><cite>mask</cite> (Optional) Identify a range of source IP addresses to manage together as a single source address affinity persistent connection when connecting to the pool. Must be a valid IPv4 or IPv6 mask.</p>
-<p><cite>map_proxies</cite> (Optional) (enabled or disabled) Directs all to the same single pool member</p>
+<p><code class="docutils literal notranslate"><span class="pre">name</span></code> - (Required) Name of the virtual address</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults_from</span></code> - (Required) Parent cookie persistence profile</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_pools</span></code> (Optional) (enabled or disabled) match across pools with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_services</span></code> (Optional) (enabled or disabled) match across services with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_virtuals</span></code> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">mirror</span></code> (Optional) (enabled or disabled) mirror persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
+<p><code class="docutils literal notranslate"><span class="pre">override_conn_limit</span></code> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
+<p><code class="docutils literal notranslate"><span class="pre">hash_algorithm</span></code> (Optional) Specify the hash algorithm</p>
+<p><code class="docutils literal notranslate"><span class="pre">mask</span></code> (Optional) Identify a range of source IP addresses to manage together as a single source address affinity persistent connection when connecting to the pool. Must be a valid IPv4 or IPv6 mask.</p>
+<p><code class="docutils literal notranslate"><span class="pre">map_proxies</span></code> (Optional) (enabled or disabled) Directs all to the same single pool member</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -594,24 +591,23 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.PersistenceProfileSsl">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileSsl</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileSsl" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PersistenceProfileSsl</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>app_service=None</em>, <em>defaults_from=None</em>, <em>match_across_pools=None</em>, <em>match_across_services=None</em>, <em>match_across_virtuals=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>override_conn_limit=None</em>, <em>timeout=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PersistenceProfileSsl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Configures an SSL persistence profile</p>
-<p>## Reference</p>
-<p><cite>name</cite> - (Required) Name of the virtual address</p>
-<p><cite>defaults_from</cite> - (Required) Parent cookie persistence profile</p>
-<p><cite>match_across_pools</cite> (Optional) (enabled or disabled) match across pools with given persistence record</p>
-<p><cite>match_across_services</cite> (Optional) (enabled or disabled) match across services with given persistence record</p>
-<p><cite>match_across_virtuals</cite> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
-<p><cite>mirror</cite> (Optional) (enabled or disabled) mirror persistence record</p>
-<p><cite>timeout</cite> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
-<p><cite>override_conn_limit</cite> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
+<p><code class="docutils literal notranslate"><span class="pre">name</span></code> - (Required) Name of the virtual address</p>
+<p><code class="docutils literal notranslate"><span class="pre">defaults_from</span></code> - (Required) Parent cookie persistence profile</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_pools</span></code> (Optional) (enabled or disabled) match across pools with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_services</span></code> (Optional) (enabled or disabled) match across services with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">match_across_virtuals</span></code> (Optional) (enabled or disabled) match across virtual servers with given persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">mirror</span></code> (Optional) (enabled or disabled) mirror persistence record</p>
+<p><code class="docutils literal notranslate"><span class="pre">timeout</span></code> (Optional) (enabled or disabled) Timeout for persistence of the session in seconds</p>
+<p><code class="docutils literal notranslate"><span class="pre">override_conn_limit</span></code> (Optional) (enabled or disabled) Enable or dissable pool member connection limits are overridden for persisted clients. Per-virtual connection limits remain hard limits and are not overridden.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -668,16 +664,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.Policy">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Policy</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>controls=None</em>, <em>name=None</em>, <em>published_copy=None</em>, <em>requires=None</em>, <em>rules=None</em>, <em>strategy=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Policy" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_policy</cite> Configures Virtual Server</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Policy</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>controls=None</em>, <em>name=None</em>, <em>published_copy=None</em>, <em>requires=None</em>, <em>rules=None</em>, <em>strategy=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Policy" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_policy</span></code> Configures Virtual Server</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>controls</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – Specifies the controls</li>
 </ul>
 </td>
@@ -761,16 +757,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.Pool">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>allow_nat=None</em>, <em>allow_snat=None</em>, <em>load_balancing_mode=None</em>, <em>monitors=None</em>, <em>name=None</em>, <em>reselect_tries=None</em>, <em>service_down_action=None</em>, <em>slow_ramp_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Pool" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_pool</cite> Manages a pool configuration.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Pool</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>allow_nat=None</em>, <em>allow_snat=None</em>, <em>load_balancing_mode=None</em>, <em>monitors=None</em>, <em>name=None</em>, <em>reselect_tries=None</em>, <em>service_down_action=None</em>, <em>slow_ramp_time=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Pool" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_pool</span></code> Manages a pool configuration.</p>
 <p>Resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -838,16 +834,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.PoolAttachment">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PoolAttachment</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>node=None</em>, <em>pool=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PoolAttachment" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_pool_attachment</cite> Manages nodes membership in pools</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">PoolAttachment</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>node=None</em>, <em>pool=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.PoolAttachment" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_pool_attachment</span></code> Manages nodes membership in pools</p>
 <p>Resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>node</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Node to add to the pool in /Partition/NodeName:Port format (e.g. /Common/Node01:80)</li>
 <li><strong>pool</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Name of the pool in /Partition/Name format</li>
 </ul>
@@ -909,16 +905,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileFastHttp">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileFastHttp</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>connpool_maxreuse=None</em>, <em>connpool_maxsize=None</em>, <em>connpool_minsize=None</em>, <em>connpool_replenish=None</em>, <em>connpool_step=None</em>, <em>connpoolidle_timeoutoverride=None</em>, <em>defaults_from=None</em>, <em>forcehttp10response=None</em>, <em>idle_timeout=None</em>, <em>maxheader_size=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileFastHttp" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_fasthttp</cite> Configures a custom profile_fasthttp for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileFastHttp</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>connpool_maxreuse=None</em>, <em>connpool_maxsize=None</em>, <em>connpool_minsize=None</em>, <em>connpool_replenish=None</em>, <em>connpool_step=None</em>, <em>connpoolidle_timeoutoverride=None</em>, <em>defaults_from=None</em>, <em>forcehttp10response=None</em>, <em>idle_timeout=None</em>, <em>maxheader_size=None</em>, <em>name=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileFastHttp" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_fasthttp</span></code> Configures a custom profile_fasthttp for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>connpool_maxreuse</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the maximum number of times that the system can re-use a current connection. The default value is 0 (zero).</li>
 <li><strong>connpool_maxsize</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the maximum number of connections to a load balancing pool. A setting of 0 specifies that a pool can accept an unlimited number of connections. The default value is 2048.</li>
 <li><strong>connpool_minsize</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the minimum number of connections to a load balancing pool. A setting of 0 specifies that there is no minimum. The default value is 10.</li>
@@ -1043,16 +1039,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileFastL4">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileFastL4</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>client_timeout=None</em>, <em>defaults_from=None</em>, <em>explicitflow_migration=None</em>, <em>hardware_syncookie=None</em>, <em>idle_timeout=None</em>, <em>iptos_toclient=None</em>, <em>iptos_toserver=None</em>, <em>keepalive_interval=None</em>, <em>name=None</em>, <em>partition=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileFastL4" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_fastl4</cite> Configures a custom profile_fastl4 for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileFastL4</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>client_timeout=None</em>, <em>defaults_from=None</em>, <em>explicitflow_migration=None</em>, <em>hardware_syncookie=None</em>, <em>idle_timeout=None</em>, <em>iptos_toclient=None</em>, <em>iptos_toserver=None</em>, <em>keepalive_interval=None</em>, <em>name=None</em>, <em>partition=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileFastL4" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_fastl4</span></code> Configures a custom profile_fastl4 for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>client_timeout</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies late binding client timeout in seconds. This setting specifies the number of seconds allowed for a client to transmit enough data to select a server when late binding is enabled. If it expires timeout-recovery mode will dictate what action to take.</li>
 <li><strong>defaults_from</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</li>
 <li><strong>explicitflow_migration</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Enables or disables late binding explicit flow migration that allows iRules to control when flows move from software to hardware. Explicit flow migration is disabled by default hence BIG-IP automatically migrates flows from software to hardware.</li>
@@ -1170,16 +1166,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileHttp2">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileHttp2</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>activation_modes=None</em>, <em>concurrent_streams_per_connection=None</em>, <em>connection_idle_timeout=None</em>, <em>defaults_from=None</em>, <em>header_table_size=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileHttp2" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_http2</cite> Configures a custom profile_http2 for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileHttp2</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>activation_modes=None</em>, <em>concurrent_streams_per_connection=None</em>, <em>connection_idle_timeout=None</em>, <em>defaults_from=None</em>, <em>header_table_size=None</em>, <em>name=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileHttp2" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_http2</span></code> Configures a custom profile_http2 for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>activation_modes</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – Specifies what will cause an incoming connection to be handled as a HTTP/2 connection. The default values npn and alpn specify that the TLS next-protocol-negotiation and application-layer-protocol-negotiation extensions will be used.</li>
 <li><strong>concurrent_streams_per_connection</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies how many concurrent requests are allowed to be outstanding on a single HTTP/2 connection.</li>
 <li><strong>connection_idle_timeout</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the number of seconds that a connection is idle before the connection is eligible for deletion..</li>
@@ -1263,16 +1259,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileHttpCompress">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileHttpCompress</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>defaults_from=None</em>, <em>name=None</em>, <em>uri_excludes=None</em>, <em>uri_includes=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileHttpCompress" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_httpcompress</cite>  Virtual server HTTP compression profile configuration</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileHttpCompress</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>defaults_from=None</em>, <em>name=None</em>, <em>uri_excludes=None</em>, <em>uri_includes=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileHttpCompress" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_httpcompress</span></code>  Virtual server HTTP compression profile configuration</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>defaults_from</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</li>
 <li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Name of the profile_httpcompress</li>
 <li><strong>uri_excludes</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – Disables compression on a specified list of HTTP Request-URI responses. Use a regular expression to specify a list of URIs you do not want to compress.</li>
@@ -1348,16 +1344,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileOneConnect">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileOneConnect</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>defaults_from=None</em>, <em>idle_timeout_override=None</em>, <em>max_age=None</em>, <em>max_reuse=None</em>, <em>max_size=None</em>, <em>name=None</em>, <em>partition=None</em>, <em>share_pools=None</em>, <em>source_mask=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileOneConnect" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_oneconnect</cite> Configures a custom profile_oneconnect for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileOneConnect</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>defaults_from=None</em>, <em>idle_timeout_override=None</em>, <em>max_age=None</em>, <em>max_reuse=None</em>, <em>max_size=None</em>, <em>name=None</em>, <em>partition=None</em>, <em>share_pools=None</em>, <em>source_mask=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileOneConnect" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_oneconnect</span></code> Configures a custom profile_oneconnect for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>defaults_from</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</li>
 <li><strong>idle_timeout_override</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies the number of seconds that a connection is idle before the connection flow is eligible for deletion. Possible values are disabled, indefinite, or a numeric value that you specify. The default value is disabled.</li>
 <li><strong>max_age</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the maximum age in number of seconds allowed for a connection in the connection reuse pool. For any connection with an age higher than this value, the system removes that connection from the reuse pool. The default value is 86400.</li>
@@ -1468,16 +1464,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.ProfileTcp">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileTcp</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>close_wait_timeout=None</em>, <em>defaults_from=None</em>, <em>deferred_accept=None</em>, <em>fast_open=None</em>, <em>finwait2timeout=None</em>, <em>finwait_timeout=None</em>, <em>idle_timeout=None</em>, <em>keepalive_interval=None</em>, <em>name=None</em>, <em>partition=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileTcp" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_profile_tcp</cite> Configures a custom profile_tcp for use by health checks.</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">ProfileTcp</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>close_wait_timeout=None</em>, <em>defaults_from=None</em>, <em>deferred_accept=None</em>, <em>fast_open=None</em>, <em>finwait2timeout=None</em>, <em>finwait_timeout=None</em>, <em>idle_timeout=None</em>, <em>keepalive_interval=None</em>, <em>name=None</em>, <em>partition=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.ProfileTcp" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_profile_tcp</span></code> Configures a custom profile_tcp for use by health checks.</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>close_wait_timeout</strong> (<em>pulumi.Input</em><em>[</em><em>int</em><em>]</em>) – Specifies the number of seconds that a connection remains in a LAST-ACK state before quitting. A value of 0 represents a term of forever (or until the maxrtx of the FIN state). The default value is 5 seconds.</li>
 <li><strong>defaults_from</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies the profile that you want to use as the parent profile. Your new profile inherits all settings and values from the parent profile specified.</li>
 <li><strong>deferred_accept</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies, when enabled, that the system defers allocation of the connection chain context until the client response is received. This option is useful for dealing with 3-way handshake DOS attacks. The default value is disabled.</li>
@@ -1595,16 +1591,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.Snat">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Snat</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>autolasthop=None</em>, <em>full_path=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>origins=None</em>, <em>partition=None</em>, <em>snatpool=None</em>, <em>sourceport=None</em>, <em>translation=None</em>, <em>vlansdisabled=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Snat" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_snat</cite> Manages a snat configuration</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">Snat</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>autolasthop=None</em>, <em>full_path=None</em>, <em>mirror=None</em>, <em>name=None</em>, <em>origins=None</em>, <em>partition=None</em>, <em>snatpool=None</em>, <em>sourceport=None</em>, <em>translation=None</em>, <em>vlansdisabled=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.Snat" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_snat</span></code> Manages a snat configuration</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 </ul>
 </td>
 </tr>
@@ -1710,16 +1706,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.SnatPool">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">SnatPool</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>members=None</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.SnatPool" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_snatpool</cite> Collections of SNAT translation addresses</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">SnatPool</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>members=None</em>, <em>name=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.SnatPool" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_snatpool</span></code> Collections of SNAT translation addresses</p>
 <p>Resource should be named with their “full path”. The full path is the combination of the partition + name of the resource, for example /Common/my-snatpool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>members</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – Specifies a translation address to add to or delete from a SNAT pool (at least one address is required)</li>
 <li><strong>name</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Name of the snatpool</li>
 </ul>
@@ -1781,16 +1777,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.VirtualAddress">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">VirtualAddress</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>advertize_route=None</em>, <em>arp=None</em>, <em>auto_delete=None</em>, <em>conn_limit=None</em>, <em>enabled=None</em>, <em>icmp_echo=None</em>, <em>name=None</em>, <em>traffic_group=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.VirtualAddress" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_virtual_address</cite> Configures Virtual Server</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">VirtualAddress</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>advertize_route=None</em>, <em>arp=None</em>, <em>auto_delete=None</em>, <em>conn_limit=None</em>, <em>enabled=None</em>, <em>icmp_echo=None</em>, <em>name=None</em>, <em>traffic_group=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.VirtualAddress" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_virtual_address</span></code> Configures Virtual Server</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>advertize_route</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – Enabled dynamic routing of the address</li>
 <li><strong>arp</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – Enable or disable ARP for the virtual address</li>
 <li><strong>auto_delete</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – Automatically delete the virtual address with the virtual server</li>
@@ -1894,16 +1890,16 @@ a format of their choosing before sending those properties to the Pulumi engine.
 
 <dl class="class">
 <dt id="pulumi_f5bigip.ltm.VirtualServer">
-<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">VirtualServer</code><span class="sig-paren">(</span><em>__name__</em>, <em>__opts__=None</em>, <em>client_profiles=None</em>, <em>destination=None</em>, <em>fallback_persistence_profile=None</em>, <em>ip_protocol=None</em>, <em>irules=None</em>, <em>mask=None</em>, <em>name=None</em>, <em>persistence_profiles=None</em>, <em>policies=None</em>, <em>pool=None</em>, <em>port=None</em>, <em>profiles=None</em>, <em>server_profiles=None</em>, <em>snatpool=None</em>, <em>source=None</em>, <em>source_address_translation=None</em>, <em>translate_address=None</em>, <em>translate_port=None</em>, <em>vlans=None</em>, <em>vlans_enabled=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.VirtualServer" title="Permalink to this definition">¶</a></dt>
-<dd><p><cite>bigip_ltm_virtual_server</cite> Configures Virtual Server</p>
+<em class="property">class </em><code class="descclassname">pulumi_f5bigip.ltm.</code><code class="descname">VirtualServer</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>client_profiles=None</em>, <em>destination=None</em>, <em>fallback_persistence_profile=None</em>, <em>ip_protocol=None</em>, <em>irules=None</em>, <em>mask=None</em>, <em>name=None</em>, <em>persistence_profiles=None</em>, <em>policies=None</em>, <em>pool=None</em>, <em>port=None</em>, <em>profiles=None</em>, <em>server_profiles=None</em>, <em>snatpool=None</em>, <em>source=None</em>, <em>source_address_translation=None</em>, <em>translate_address=None</em>, <em>translate_port=None</em>, <em>vlans=None</em>, <em>vlans_enabled=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_f5bigip.ltm.VirtualServer" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="docutils literal notranslate"><span class="pre">bigip_ltm_virtual_server</span></code> Configures Virtual Server</p>
 <p>For resources should be named with their “full path”. The full path is the combination of the partition + name of the resource. For example /Common/my-pool.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>__name__</strong> (<em>str</em>) – The name of the resource.</li>
-<li><strong>__opts__</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
+<li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
 <li><strong>client_profiles</strong> (<em>pulumi.Input</em><em>[</em><em>list</em><em>]</em>) – List of client context profiles associated on the virtual server. Not mutually exclusive with profiles and server_profiles</li>
 <li><strong>destination</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Destination IP</li>
 <li><strong>fallback_persistence_profile</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Specifies a fallback persistence profile for the Virtual Server to use when the default persistence profile is not available.</li>
