@@ -897,7 +897,9 @@ func createTypeLabel(t typeDocType, indent int) string {
 		if hyperlink := typeHyperlink(t); hyperlink != "" {
 			label += fmt.Sprintf("<a href='%s'>%s</a>", hyperlink, t.Name)
 		} else {
-			label += t.Name
+			name := strings.Replace(t.Name, "<", "&lt;", -1)
+			name = strings.Replace(name, ">", "&gt;", -1)
+			label += name
 		}
 
 		if t.Type == typeDocIntrinsicType {
