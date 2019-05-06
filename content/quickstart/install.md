@@ -3,16 +3,15 @@ title: "Download and Install"
 aliases:
     - install.html
     - /install/
-menu:
-  quickstart:
-    weight: 2
 ---
 
+{{< comment >}}
 <!--
 NOTE: To update this page with a new binary release, do the following:
 - Update `static/latest-version`
 - Update `content/reference/changelog.md`
 -->
+{{< /comment >}}
 
 First things first, let's install the Pulumi CLI on your machine.
 

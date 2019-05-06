@@ -1,0 +1,19 @@
+<!-- TODO make these pretty buttons and pull out styles. -->
+{{/* Determine the total number of steps based on the files in the directory. */}}
+{{- $last := 0 -}}
+{{- range readDir (printf "content/%s" .Page.File.Dir) -}}
+    {{- $page := int (strings.TrimSuffix ".md" .Name) -}}
+    {{- if gt $page $last -}}
+        {{- $last = $page -}}
+    {{- end -}}
+{{- end -}}
+{{/* Determine the current step based on the current file name. */}}
+{{- $step := int .Page.File.BaseFileName -}}
+<ul style="margin-top: 24px;">
+{{- if ne $step 1 -}}
+    <li><a href="../{{ sub $step 1 }}">&lt; PREVIOUS</a></li>
+{{- end -}}
+{{- if ne $step $last -}}
+    <li><a href="../{{ add $step 1 }}">NEXT STEP &gt;</a></li>
+{{- end -}}
+</ul>

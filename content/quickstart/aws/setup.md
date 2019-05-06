@@ -1,13 +1,8 @@
 ---
-title: Setup
+title: AWS Provider Setup
 aliases:
     - setup.html
     - /install/aws.html
-menu:
-  quickstart:
-    identifier: aws-setup
-    parent: aws
-    weight: 1
 ---
 
 <!-- LINKS -->

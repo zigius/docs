@@ -1,10 +1,11 @@
 ---
-title: Kubernetes
+title: Get Started with Kubernetes
 aliases: ["/reference/kubernetes.html"]
 menu:
   quickstart:
     identifier: kubernetes
-    weight: 6
+    name: Kubernetes
+    weight: 5
 ---
 
 <img src="/images/quickstart/k8s-purple.png" align="right">

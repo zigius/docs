@@ -3,10 +3,6 @@ title: "Tutorial: API Gateways and Lambda"
 aliases:
     - tutorial-rest-api.html
     - /quickstart/aws-hello-world.html
-menu:
-  quickstart:
-    parent: aws
-    weight: 3
 ---
 
 In this tutorial, we'll use Pulumi to create a serverless app that serves static content, in addition to dynamic routes

@@ -1,0 +1,41 @@
+{{- $steps := slice "_index" -}}
+{{- $steps = $steps | append "prerequisites" -}}
+{{- $steps = $steps | append "install-pulumi" -}}
+{{- $steps = $steps | append "configure-aws" -}}
+{{- $steps = $steps | append "provision-infrastructure" -}}
+{{- $steps = $steps | append "change-infrastructure" -}}
+{{- $steps = $steps | append "destroy-infrastructure" -}}
+{{- $steps = $steps | append "next-steps" -}}
+{{- $first := 0 -}}
+{{- $last := sub (len $steps) 1 -}}
+
+{{- $currentPage := . -}}
+
+{{/* Determine the current step. */}}
+{{- $step := -1 -}}
+{{- range $index, $element := $steps -}}
+    {{- if eq $element $currentPage.Page.File.BaseFileName -}}
+        {{- $step = $index -}}
+    {{- end -}}
+{{- end -}}
+{{- if eq $step -1 -}}
+    {{ errorf "Page %q is not part of this guide" .File.Path }}
+{{- end -}}
+
+<!-- TODO move the style to .scss -->
+<style>
+    .get-started-stepper {
+        margin-top: 24px;
+    }
+</style>
+
+<div class="get-started-stepper">
+{{- if ne $step $first -}}
+    {{- $prev := sub $step 1 -}}
+    <a href="{{ relref . (printf "%s.md" (index $steps $prev)) }}" class="button">&lt; PREVIOUS</a>
+{{- end -}}
+{{- if ne $step $last -}}
+    {{- $next := add $step 1 -}}
+    <a href="{{ relref . (printf "%s.md" (index $steps $next)) }}" class="button primary">NEXT STEP &gt;</a>
+{{- end -}}
+</div>

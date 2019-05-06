@@ -3,11 +3,6 @@ title: Setup
 aliases:
   - setup.html
   - /install/azure.html
-menu:
-  quickstart:
-    identifier: azure-setup
-    parent: azure
-    weight: 1
 ---
 
 The [Pulumi Azure provider]({{< relref "./" >}}) uses the Azure SDK to manage and provision resources.
