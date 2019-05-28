@@ -9,6 +9,7 @@ PACKAGES=(
   "pulumi_azure"
   "pulumi_azuread"
   "pulumi_cloudflare"
+  "pulumi_digitalocean"
   "pulumi_f5bigip"
   "pulumi_gcp"
   "pulumi_kubernetes"
@@ -28,7 +29,7 @@ run_pydocgen() {
   for pkg in "${PACKAGES[@]}"; do
     pipenv run pip install --pre "${pkg}"
   done
-  pipenv run python -m pydocgen "../../reference/pkg"
+  pipenv run python -m pydocgen "../../content/reference/pkg"
   popd
 }
 

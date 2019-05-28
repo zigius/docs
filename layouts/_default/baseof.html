@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "header.html" . }}
+
+        <main id="main-content">
+            <section class="content-block bg-white">
+                <div class="content-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            {{ block "main" . }}
+
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        {{ partial "footer.html" . }}
+
+        {{ partial "scripts.html" . }}
+    </body>
+</html>
