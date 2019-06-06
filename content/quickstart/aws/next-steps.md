@@ -4,7 +4,7 @@ menu:
   quickstart:
     parent: aws
     identifier: aws-next-steps
-    weight: 6
+    weight: 8
 ---
 
 TODO

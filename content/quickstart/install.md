@@ -214,11 +214,5 @@ v{{< latest-version >}}
 If you get an error that `pulumi` could not be found, it means your path has not been configured correctly. Please go
 back and ensure your path contains the directory containing the `pulumi` CLI installed earlier.
 
-## Next Steps
-
-After installation, choose a cloud to get started:
-
-{{< quickstart-clouds >}}
-
 {{% /md %}}
 </div>

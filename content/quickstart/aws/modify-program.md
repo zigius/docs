@@ -1,9 +1,9 @@
 ---
-title: Provision Infrastructure
+title: Modify the Program
 menu:
   quickstart:
     parent: aws
-    weight: 4
+    weight: 5
 ---
 
 TODO

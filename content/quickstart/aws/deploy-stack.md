@@ -1,11 +1,11 @@
 ---
-title: Install Pulumi
+title: Deploy the Stack
 menu:
   quickstart:
     parent: aws
-    weight: 1
+    weight: 4
 ---
 
-{{< install-pulumi >}}
+TODO
 
 {{< aws-get-started >}}

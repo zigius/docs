@@ -1,9 +1,5 @@
 ---
 title: Prerequisites
-menu:
-  quickstart:
-    parent: aws
-    weight: 1
 ---
 
 ## Language Runtime
@@ -24,4 +20,3 @@ TODO
 
 The next step of the guide includes instructions on how to install Pulumi.
 
-{{< aws-get-started >}}

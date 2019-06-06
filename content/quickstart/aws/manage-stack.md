@@ -1,9 +1,9 @@
 ---
-title: Change Infrastructure
+title: Manage the Stack
 menu:
   quickstart:
     parent: aws
-    weight: 5
+    weight: 6
 ---
 
 TODO

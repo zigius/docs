@@ -1,9 +1,9 @@
 ---
-title: Destroy Infrastructure
+title: Destroy the Stack
 menu:
   quickstart:
     parent: aws
-    weight: 5
+    weight: 7
 ---
 
 TODO
