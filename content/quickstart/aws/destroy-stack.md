@@ -3,7 +3,7 @@ title: Destroy the Stack
 menu:
   quickstart:
     parent: aws
-    weight: 8
+    weight: 9
 ---
 
 To destroy resources, run the following:

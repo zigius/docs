@@ -3,7 +3,7 @@ title: Create a New Project
 menu:
   quickstart:
     parent: aws
-    weight: 3
+    weight: 4
 ---
 
 Let's get started with a new project.
@@ -45,7 +45,7 @@ Let’s look at some of those.
 
 - `Pulumi.yaml` defines the [project]({{< relref "/reference/project.md" >}}).
 - `Pulumi.dev.yaml` is the [configuration file]({{< relref "/tour/programs-configuring.md" >}}) for the stack we initialized.
-- `index.ts` is the Pulumi program that defines our stack resources. Let's examine it.
+- {{< langfile >}} is the Pulumi program that defines our stack resources. Let's examine it.
 
 {{< langchoose nogo >}}
 

@@ -3,10 +3,10 @@ title: Modify the Program
 menu:
   quickstart:
     parent: aws
-    weight: 5
+    weight: 6
 ---
 
-Let's update our program to do something a little more interesting. Replace the entire contents of `index.ts` with the following:
+Let's update our program to do something a little more interesting. Replace the entire contents of {{< langfile >}} with the following:
 
 {{< langchoose nogo >}}
 

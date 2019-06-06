@@ -3,7 +3,7 @@ title: Deploy the Stack
 menu:
   quickstart:
     parent: aws
-    weight: 4
+    weight: 5
 ---
 
 Let's go ahead and deploy the stack:

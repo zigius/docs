@@ -1,5 +1,6 @@
 {{- $steps := slice "_index" -}}
 {{- $steps = $steps | append "install-pulumi" -}}
+{{- $steps = $steps | append "install-language-runtime" -}}
 {{- $steps = $steps | append "configure-aws" -}}
 {{- $steps = $steps | append "create-project" -}}
 {{- $steps = $steps | append "deploy-stack" -}}

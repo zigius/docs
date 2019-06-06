@@ -3,7 +3,7 @@ title: Deploy the Changes
 menu:
   quickstart:
     parent: aws
-    weight: 6
+    weight: 7
 ---
 
 Now let's deploy our changes.
