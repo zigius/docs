@@ -9,6 +9,6 @@ menu:
 
 This guide is intended to help you quickly get started with Pulumi and AWS.
 
-TODO brief summary of guide
+<!-- TODO brief summary of guide -->
 
 {{< aws-get-started >}}

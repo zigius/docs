@@ -6,7 +6,7 @@ menu:
     weight: 4
 ---
 
-Let's get started with a new project.
+Let's get started with a new project in a new directory.
 
 {{< langchoose nogo >}}
 
@@ -31,20 +31,20 @@ $ mkdir quickstart && cd quickstart
 $ pulumi new aws-python
 ```
 
-If this is your first time running `pulumi new` (or most other `pulumi` commands), you will be prompted to login to the [Pulumi service](https://app.pulumi.com). The CLI works in tandem with the Pulumi service to deliver a reliable experience, and is free for individual use, with [additional features available for teams](https://www.pulumi.com/pricing/). Hitting enter at the prompt will open a web browser allowing you to sign in or sign up. Alternatively, you may [login]({{< relref "/reference/cli/pulumi_login.md" >}}) or [logout]({{< relref "/reference/cli/pulumi_logout.md" >}}) explicitly if you prefer.
+> If this is your first time running `pulumi new` (or most other `pulumi` commands), you will be prompted to login to the [Pulumi service](https://app.pulumi.com). The CLI works in tandem with the Pulumi service to deliver a reliable experience, and is free for individual use, with [additional features available for teams](https://www.pulumi.com/pricing/). Hitting enter at the prompt will open a web browser allowing you to sign in or sign up. Alternatively, you may [login]({{< relref "/reference/cli/pulumi_login.md" >}}) or [logout]({{< relref "/reference/cli/pulumi_logout.md" >}}) explicitly if you prefer.
 
-TODO SCREENSHOT OF NEW PROJECT PROMPTS
+[TODO SCREENSHOT OF NEW PROJECT PROMPTS]
 
-> What are [projects]({{< relref "/reference/project.md" >}}) and [stacks]({{< relref "/reference/stack.md" >}})? Pulumi projects and stacks are a way to organize Pulumi code. You can consider a Pulumi Project to be analogous to a GitHub repo: a single place for code — and a Stack to be an instance of that code which has separate configuration. For instance, Project Foo may have multiple stacks for Dev, Test, Prod, or perhaps for different cloud configurations (e.g. geographic region). Please [see this guide]({{< relref "/reference/organizing-stacks-projects.md" >}}) for some best practices on organizing your Pulumi projects and stacks.
+What are [projects]({{< relref "/reference/project.md" >}}) and [stacks]({{< relref "/reference/stack.md" >}})? Pulumi projects and stacks are a way to organize Pulumi code. You can consider a Pulumi Project to be analogous to a GitHub repo: a single place for code — and a Stack to be an instance of that code which has separate configuration. For instance, Project Foo may have multiple stacks for Dev, Test, Prod, or perhaps for different cloud configurations (e.g. geographic region). Please [see this guide]({{< relref "/reference/organizing-stacks-projects.md" >}}) for some best practices on organizing your Pulumi projects and stacks.
 
 After some dependency installations from `npm`, you’ll see a few files have been generated:
 
-TODO SCREENSHOT OR SNIPPET OF `ls`
+[TODO SCREENSHOT OR SNIPPET OF `ls`]
 
 Let’s look at some of those.
 
 - `Pulumi.yaml` defines the [project]({{< relref "/reference/project.md" >}}).
-- `Pulumi.dev.yaml` is the [configuration file]({{< relref "/tour/programs-configuring.md" >}}) for the stack we initialized.
+- `Pulumi.dev.yaml` is the [configuration file]({{< relref "/reference/config.md" >}}) for the stack we initialized.
 - {{< langfile >}} is the Pulumi program that defines our stack resources. Let's examine it.
 
 {{< langchoose nogo >}}
