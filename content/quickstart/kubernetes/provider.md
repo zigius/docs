@@ -74,7 +74,7 @@ lines:
 
 ### Prerequisites
 
--   Install [Node.js][nodejs] version 6 or later.
+-   Install [Node.js][nodejs] version 8 or later.
 -   Install a package manager for Node.js, such as [npm] or [Yarn].
 -   Follow the directions [here][install] to install the Pulumi CLI.
 
