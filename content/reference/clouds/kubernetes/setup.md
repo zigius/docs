@@ -11,7 +11,7 @@ aliases:
 [client-go]: https://github.com/kubernetes/client-go
 [gke-tutorial]: {{< relref "/tutorial-gke" >}}
 [eks-tutorial]: {{< relref "/tutorial-eks" >}}
-[aks-tutorial]: {{< relref "/tutorial-azure-kubernetes-service" >}}
+[aks-tutorial]: {{< relref "/tutorial-aks" >}}
 [Heptio AWS quickstart]: https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/
 [provider-args]: {{< relref "/reference/pkg/nodejs/pulumi/kubernetes#ProviderArgs" >}}
 [provider-kubeconfig]: {{< relref "/reference/pkg/nodejs/pulumi/kubernetes#ProviderArgs-kubeconfig" >}}

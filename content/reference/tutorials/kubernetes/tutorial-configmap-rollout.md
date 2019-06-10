@@ -1,8 +1,11 @@
 ---
-title: "Tutorial #4: Graceful App Rollout"
+title: "#4: Graceful App Rollout"
 aliases:
     - /quickstart/kubernetes/tutorial-configmap-rollout/
     - /quickstart/kubernetes/tutorial-configmap-rollout.html
+menu:
+  reference:
+    parent: tutorials-kubernetes
 ---
 
 This tutorial shows you how to use Pulumi to write and manage a Kubernetes application through it's

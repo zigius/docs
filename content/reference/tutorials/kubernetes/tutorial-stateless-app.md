@@ -1,8 +1,11 @@
 ---
-title: "Tutorial #6: Run a Stateless App Deployment"
+title: "#6: Run a Stateless App Deployment"
 aliases:
   - /quickstart/kubernetes/tutorial-stateless-app/
   - /quickstart/kubernetes/tutorial-stateless-app.html
+menu:
+  reference:
+    parent: tutorials-kubernetes
 ---
 
 In this tutorial, we'll run an application using a [Kubernetes

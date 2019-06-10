@@ -55,7 +55,7 @@ Check out [Pulumi: A Better Way to Kubernetes][better-way-to-k8s] for details!
 [kubeconfig]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 [gke-tutorial]: {{< relref "/tutorial-gke" >}}
 [eks-tutorial]: {{< relref "/tutorial-eks" >}}
-[aks-tutorial]: {{< relref "/tutorial-azure-kubernetes-service" >}}
+[aks-tutorial]: {{< relref "/tutorial-aks" >}}
 [eks]: https://aws.amazon.com/eks/
 [aurora]: https://aws.amazon.com/rds/aurora/
 [pulumi-k8s]: https://github.com/pulumi/pulumi-kubernetes

@@ -1,10 +1,14 @@
 ---
-title: "Tutorial: GKE - Hello World!"
+title: "Clusters: GKE - Hello World!"
 aliases:
     - /quickstart/kubernetes/tutorial-gke/
     - /quickstart/gcp/tutorial-gke.html
     - /quickstart/gcp/tutorial-gke/
     - /quickstart/gke-hello-world.html
+menu:
+  reference:
+    parent: tutorials-kubernetes
+    weight: 2
 ---
 
 In this tutorial, we'll launch a new Managed Kubernetes cluster in Google Kubernetes Engine (GKE) on GCP. The [code for this tutorial](https://github.com/pulumi/examples/tree/master/gcp-ts-gke-hello-world) is available on GitHub.
