@@ -9,6 +9,6 @@ menu:
 
 From here, you can dive deeper:
 
-TODO link to tutorials, examples, etc.
+TODO link to other tutorials, examples, etc.
 
 {{< get-started-stepper >}}
