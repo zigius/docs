@@ -7,6 +7,7 @@ aliases:
 menu:
   reference:
     parent: clouds-aws
+    identifier: clouds-aws-setup
 ---
 
 <!-- LINKS -->
