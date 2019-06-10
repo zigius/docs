@@ -77,7 +77,7 @@ For a streamlined walkthrough of getting started with Pulumi, including installi
     }
 </script>
 
-<label for="os">Select your operating system:</label>
+<label for="os">Operating system:</label>
 <select id="os" onchange="selectCurrentOs()">
     <option value="unknown">(choose one)</option>
     <option value="linux">Linux</option>
@@ -92,6 +92,8 @@ For a streamlined walkthrough of getting started with Pulumi, including installi
 <div id="macos_installation">
 {{% md %}}
 ## macOS
+
+macOS Sierra (10.12) or later is required.
 
 You can install Pulumi through the [Homebrew package manager](https://brew.sh/):
 
@@ -120,8 +122,6 @@ This will install the `pulumi` CLI to `~/.pulumi/bin` and add it to your path.
 The installer script can be rerun to subsequently install new updates.
 
 ### (Alternative) Manual Installation
-
-macOS Sierra (10.12) or later is required.
 
 1. Download [Pulumi {{< latest-version >}} for macOS](https://get.pulumi.com/releases/sdk/pulumi-v{{< latest-version >}}-darwin-x64.tar.gz).
 
@@ -157,6 +157,8 @@ We provide a pre-built binary for Linux.
 {{% md %}}
 ## Windows
 
+Windows 8 and 10 are supported.
+
 To install on Windows, run our installation script from a `cmd.exe` window:
 
 ```batch
@@ -166,8 +168,6 @@ To install on Windows, run our installation script from a `cmd.exe` window:
 This will install the `pulumi.exe` CLI to `%USERPROFILE%\.pulumi\bin` and add it to your path.
 
 ### (Alternative) Manual Installation
-
-Windows 8 and 10 are supported.
 
 1. Download [Pulumi {{< latest-version >}} for Windows x64](https://get.pulumi.com/releases/sdk/pulumi-v{{< latest-version >}}-windows-x64.zip).
 
