@@ -19,7 +19,7 @@ NOTE: To update this page with a new binary release, do the following:
 
 This page contains detailed instructions on installing Pulumi.
 
-For a streamlined walkthrough of getting started with Pulumi, including installing Pulumi and prerequisites, see the [Getting Started]({{< relref "/quickstart" >}}) guide.
+For a streamlined walkthrough of getting started with Pulumi, including installing Pulumi and prerequisites, see the [Get Started]({{< relref "/quickstart" >}}) guide.
 
 <script>
     var oses = [ "unknown", "linux", "macos", "windows" ];
