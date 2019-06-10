@@ -4,6 +4,7 @@ weight: 7
 menu:
   quickstart:
     parent: aws
+    identifier: aws-modify-program
 ---
 
 Let's update our program to do something a little more interesting. Replace the entire contents of {{< langfile >}} with the following:

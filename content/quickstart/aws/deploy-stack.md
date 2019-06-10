@@ -4,6 +4,7 @@ weight: 6
 menu:
   quickstart:
     parent: aws
+    identifier: aws-deploy-stack
 ---
 
 Let's go ahead and deploy the stack:

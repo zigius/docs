@@ -4,6 +4,7 @@ weight: 11
 menu:
   quickstart:
     parent: aws
+    identifier: aws-next-steps
 ---
 
 From here, you can dive deeper:

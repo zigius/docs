@@ -4,6 +4,7 @@ weight: 5
 menu:
   quickstart:
     parent: aws
+    identifier: aws-create-project
 ---
 
 Let's get started with a new project in a new directory.

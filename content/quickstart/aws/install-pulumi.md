@@ -4,6 +4,7 @@ weight: 2
 menu:
   quickstart:
     parent: aws
+    identifier: aws-install-pulumi
 ---
 
 {{< install-pulumi >}}

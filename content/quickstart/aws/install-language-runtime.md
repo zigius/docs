@@ -4,6 +4,7 @@ weight: 3
 menu:
   quickstart:
     parent: aws
+    identifier: aws-install-language-runtime
 ---
 
 ## Choose Your Language

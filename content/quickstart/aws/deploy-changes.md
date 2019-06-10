@@ -4,6 +4,7 @@ weight: 8
 menu:
   quickstart:
     parent: aws
+    identifier: aws-deploy-changes
 ---
 
 Now let's deploy our changes.

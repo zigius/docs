@@ -4,6 +4,7 @@ weight: 9
 menu:
   quickstart:
     parent: aws
+    identifier: aws-manage-stack
 ---
 
 Our output also contained a permalink to the Pulumi service. We can view the update in the UI, and examine logs and resource usage, with handy links to the AWS console.

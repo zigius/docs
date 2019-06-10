@@ -4,6 +4,7 @@ weight: 10
 menu:
   quickstart:
     parent: aws
+    identifier: aws-destroy-stack
 ---
 
 To destroy resources, run the following:
