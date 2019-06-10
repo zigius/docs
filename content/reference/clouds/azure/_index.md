@@ -21,7 +21,7 @@ The Azure provider supports several options for providing access to Azure creden
 
 ## Getting Started
 
-The quickest way to get started with AWS is to follow the [Get Started]({{< relref "/quickstart/azure" >}}) guide.
+The quickest way to get started with Azure is to follow the [Get Started]({{< relref "/quickstart/azure" >}}) guide.
 
 Additionally, a tutorial is available to follow:
 
