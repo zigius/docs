@@ -49,7 +49,7 @@ instructions [here][kubectl].
 [ts]: https://www.typescriptlang.org/
 [yarn]: https://yarnpkg.com/en/docs/install
 
-[aws-setup]: {{< relref "/quickstart/aws/setup.md" >}}
+[aws-setup]: {{< relref "/reference/clouds/aws/setup.md" >}}
 [azure-setup]: {{< relref "/quickstart/azure/setup.md" >}}
 [gcp-setup]: {{< relref "/quickstart/gcp/setup.md" >}}
 

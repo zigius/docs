@@ -1,6 +1,12 @@
 ---
-title: AWS Provider Overview
-aliases: ["/reference/aws.html"]
+title: AWS
+aliases:
+  - /quickstart/aws/
+  - /reference/aws.html
+menu:
+  reference:
+    parent: clouds
+    identifier: clouds-aws
 ---
 
 <img src="/images/quickstart/aws-purple.png" align="right">
@@ -17,13 +23,15 @@ The AWS provider supports several options for providing access to AWS credential
 
 ## Getting Started
 
-The easiest way to start with AWS is to follow one of the tutorials:
+The quickest way to get started with AWS is to follow the [Get Started]({{< relref "/quickstart/aws" >}}) guide.
 
-* [Serverless REST APIs using Lambda]({{< relref "tutorial-rest-api.md" >}}): Create simple RESTful web server using AWS Lambdas
-* [EC2 Linux WebServer VM]({{< relref "tutorial-ec2-webserver.md" >}}): Create an EC2 Linux Web Server virtual machine
-* [A simple containerized app]({{< relref "tutorial-service.md" >}}): Deploy EC2 or Fargate ECS Services
-* [Serve a Static Website from S3]({{< relref "tutorial-s3-website.md" >}}): Serve a static website out of content in an S3 bucket
-* [Serverless + Containers + Infrastructure]({{< relref "tutorial-thumbnailer.md" >}}): Deploy a complete  application using a combination of buckets, serverless functions and containers.
+Additionally, there are several tutorials available to follow:
+
+* [Serverless REST APIs using Lambda]({{< relref "/reference/tutorials/aws/tutorial-rest-api.md" >}}): Create simple RESTful web server using AWS Lambdas
+* [EC2 Linux WebServer VM]({{< relref "/reference/tutorials/aws/tutorial-ec2-webserver.md" >}}): Create an EC2 Linux Web Server virtual machine
+* [A simple containerized app]({{< relref "/reference/tutorials/aws/tutorial-service.md" >}}): Deploy EC2 or Fargate ECS Services
+* [Serve a Static Website from S3]({{< relref "/reference/tutorials/aws/tutorial-s3-website.md" >}}): Serve a static website out of content in an S3 bucket
+* [Serverless + Containers + Infrastructure]({{< relref "/reference/tutorials/aws/tutorial-thumbnailer.md" >}}): Deploy a complete  application using a combination of buckets, serverless functions and containers.
 
 In addition to the tutorials, several interesting examples are available complete with instructions:
 
