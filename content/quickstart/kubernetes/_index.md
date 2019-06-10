@@ -1,6 +1,7 @@
 ---
 title: Get Started with Kubernetes
 aliases: ["/reference/kubernetes.html"]
+weight: 1
 menu:
   quickstart:
     identifier: kubernetes
@@ -12,4 +13,6 @@ This guide is intended to help you quickly get started provisioning infrastructu
 
 TODO brief summary of guide
 
-TODO NEXT
+Let's start with installing Pulumi.
+
+{{< get-started-stepper >}}
