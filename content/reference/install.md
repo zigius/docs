@@ -1,8 +1,12 @@
 ---
 title: "Download and Install"
 aliases:
-    - install.html
+    - /quickstart/install/
+    - /quickstart/install.html
     - /install/
+menu:
+  reference:
+    weight: 11
 ---
 
 {{< comment >}}
@@ -13,7 +17,7 @@ NOTE: To update this page with a new binary release, do the following:
 -->
 {{< /comment >}}
 
-First things first, let's install the Pulumi CLI on your machine.
+This page contains detailed instructions on installing Pulumi. For a streamlined walkthrough of getting started with Pulumi, see the [Getting Started]({{< relref "/quickstart" >}}) guide.
 
 <script>
     var oses = [ "unknown", "linux", "macos", "windows", "other" ];
@@ -71,7 +75,7 @@ First things first, let's install the Pulumi CLI on your machine.
     }
 </script>
 
-<label for="os">Operating system:</label>
+<label for="os">Select your operating system:</label>
 <select id="os" onchange="selectCurrentOs()">
     <option value="unknown">(choose one)</option>
     <option value="linux">Linux</option>
