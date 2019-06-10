@@ -50,7 +50,7 @@ instructions [here][kubectl].
 [yarn]: https://yarnpkg.com/en/docs/install
 
 [aws-setup]: {{< relref "/reference/clouds/aws/setup.md" >}}
-[azure-setup]: {{< relref "/quickstart/azure/setup.md" >}}
+[azure-setup]: {{< relref "/reference/clouds/azure/setup.md" >}}
 [gcp-setup]: {{< relref "/quickstart/gcp/setup.md" >}}
 
 [kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/

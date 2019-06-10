@@ -15,7 +15,7 @@ Pulumi supports many clouds using the same languages, CLI, and deployment workfl
 To quickly get started with Pulumi see the [Get Started]({{< relref "/quickstart" >}}) guide.
 
 * [AWS]({{< relref "./aws" >}})
-* Azure
+* [Azure]({{< relref "./azure" >}})
 * Google Cloud
 * Kubernetes
 * Open Stack

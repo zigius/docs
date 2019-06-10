@@ -1,6 +1,12 @@
 ---
-title: Microsoft Azure Provider Overview
-aliases: ["/reference/azure.html"]
+title: Azure
+aliases:
+    - /quickstart/azure/
+    - /reference/azure.html
+menu:
+  reference:
+    parent: clouds
+    identifier: clouds-azure
 ---
 
 <img src="/images/quickstart/azure-purple.png" align="right">
@@ -11,11 +17,13 @@ See the [full API documentation]({{< relref "/reference/pkg/nodejs/pulumi/azure"
 
 ## Setup
 
-The Azure provider supports several options for providing access to Azure credentials.  See [Azure installation page]({{< relref "/quickstart/azure/setup.md" >}}) for details.
+The Azure provider supports several options for providing access to Azure credentials.  See [Azure setup page]({{< relref "/reference/clouds/azure/setup.md" >}}) for details.
 
 ## Getting Started
 
-The easiest way to start with Pulumi for Azure is to follow the tutorial:
+The quickest way to get started with AWS is to follow the [Get Started]({{< relref "/quickstart/azure" >}}) guide.
+
+Additionally, a tutorial is available to follow:
 
 * [Azure Container Instances Web Server]({{< relref "tutorial-container-webserver.md" >}}): Create an NGINX web server Azure Container Instance
 

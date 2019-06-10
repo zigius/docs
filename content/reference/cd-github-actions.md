@@ -116,7 +116,7 @@ This enables your GitHub Action to communicate with the Pulumi service.
 Next, you'll need to configure your cloud credentials. This is dependent on your cloud of choice; for example
 
 * `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for [AWS]({{< relref "/reference/clouds/aws/setup.md" >}})
-* `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, and `ARM_TENANT_ID` for [Azure]({{< relref "/quickstart/azure/setup.md" >}})
+* `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, and `ARM_TENANT_ID` for [Azure]({{< relref "/reference/clouds/azure/setup.md" >}})
 * `GOOGLE_CREDENTIALS` for [GCP]({{< relref "/quickstart/gcp/setup.md" >}})
 * `KUBECONFIG` for [Kubernetes]({{< relref "/quickstart/kubernetes/setup.md" >}})
 

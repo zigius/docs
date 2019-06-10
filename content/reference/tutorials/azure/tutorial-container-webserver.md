@@ -1,6 +1,8 @@
 ---
 title: "Tutorial: Web Server Container Instance"
-aliases: ["tutorial-container-webserver.html"]
+aliases:
+  - /quickstart/azure/tutorial-container-webserver/
+  - /quickstart/azure/tutorial-container-webserver.html
 ---
 
 In this tutorial, we'll use JavaScript to deploy a simple nginx container to Azure Container Instance (ACI).
@@ -8,7 +10,7 @@ In this tutorial, we'll use JavaScript to deploy a simple nginx container to Azu
 ## Prerequisites
 
 1.  [Install Pulumi]({{< relref "/reference/install.md" >}})
-1.  [Configure Azure credentials]({{< relref "setup.md" >}})
+1.  [Configure Azure credentials]({{< relref "/reference/clouds/azure/setup.md" >}})
 
 ## Create a container in Azure Container Instance {#ACI}
 
