@@ -153,7 +153,7 @@ You can find a list of frequently-asked questions [here]({{< relref "faq.md" >}}
 [azure]: {{< relref "/quickstart/azure" >}}
 [gcp]: {{< relref "/quickstart/gcp" >}}
 [eks]: https://aws.amazon.com/eks/
-[install]: {{< relref "/quickstart/install.md" >}}
+[install]: {{< relref "/reference/install.md" >}}
 [nodejs]: https://nodejs.org/en/
 [npm]: https://www.npmjs.com/get-npm
 [yarn]: https://yarnpkg.com/en/docs/install

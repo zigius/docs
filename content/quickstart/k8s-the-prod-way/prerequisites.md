@@ -44,7 +44,7 @@ instructions [here][kubectl].
 
 [pulumi]: https://www.pulumi.com/
 [nodejs]: https://nodejs.org/en/
-[pulumi-cli]: {{< relref "/quickstart/install.md" >}}
+[pulumi-cli]: {{< relref "/reference/install.md" >}}
 [local-backend]: {{< relref "/reference/state.md" >}}
 [ts]: https://www.typescriptlang.org/
 [yarn]: https://yarnpkg.com/en/docs/install
