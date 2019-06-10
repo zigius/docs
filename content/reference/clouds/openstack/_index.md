@@ -1,6 +1,12 @@
 ---
 title: OpenStack
-aliases: ["/reference/openstack.html"]
+aliases:
+  - /quickstart/openstack/
+  - /reference/openstack.html
+menu:
+  reference:
+    parent: clouds
+    identifier: clouds-openstack
 ---
 
 <img src="/images/quickstart/openstack-purple.png" align="right">
