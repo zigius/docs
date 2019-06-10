@@ -1,10 +1,7 @@
 ---
 title: Introduction
-menu:
-  quickstart:
-    parent: kubernetes
-    identifier: kubernetes-using-pulumi
-    weight: 1
+aliases:
+  - /quickstart/kubernetes/introduction/
 ---
 
 ## Using Pulumi
@@ -53,7 +50,7 @@ Check out [Pulumi: A Better Way to Kubernetes][better-way-to-k8s] for details!
 
 [upstream]: https://kubernetes.io/docs/reference/
 [eks]: https://aws.amazon.com/eks/
-[faq]: {{< relref "/quickstart/kubernetes/faq" >}}
+[faq]: {{< relref "/reference/clouds/kubernetes/faq.md" >}}
 [gcp]: {{< relref "/quickstart/gcp" >}}
 [kubeconfig]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
 [gke-tutorial]: {{< relref "/tutorial-gke" >}}

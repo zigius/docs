@@ -1,13 +1,9 @@
 ---
 title: "Tutorial: AKS - Hello World!"
 aliases:
+    - /quickstart/kubernetes/tutorial-azure-kubernetes-service/
     - /quickstart/azure/tutorial-azure-kubernetes-service.html
     - /quickstart/azure/tutorial-azure-kubernetes-service/
-menu:
-  quickstart:
-    parent: azure
-    parent: kubernetes-clusters
-    weight: 3
 ---
 
 In this tutorial, we'll use Python to deploy an instance of Azure Kubernetes Service (AKS). You can find this code on the in the [examples repo](https://github.com/pulumi/examples/tree/master/azure-py-aks).

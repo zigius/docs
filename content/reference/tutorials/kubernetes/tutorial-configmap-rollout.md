@@ -1,10 +1,8 @@
 ---
 title: "Tutorial #4: Graceful App Rollout"
-aliases: ["tutorial-configmap-rollout.html"]
-menu:
-  quickstart:
-    parent: kubernetes-workloads
-    weight: 6
+aliases:
+    - /quickstart/kubernetes/tutorial-configmap-rollout/
+    - /quickstart/kubernetes/tutorial-configmap-rollout.html
 ---
 
 This tutorial shows you how to use Pulumi to write and manage a Kubernetes application through it's
@@ -30,7 +28,7 @@ For example, in the gif below, we can see how updating one resource (in this cas
 ## Prerequisites
 
 > **IMPORTANT:** This tutorial expects that you have provisioned a Kubernetes cluster and have an
-> active kubeconfig file. If you don't, please follow instructions [here]({{< relref "./" >}}).
+> active kubeconfig file. If you don't, please follow instructions [here]({{< relref "/reference/clouds/kubernetes" >}}).
 
 1.  Install [Node.js][nodejs] version 8 or later.
 1.  Install a package manager for Node.js, such as [npm] or [Yarn].

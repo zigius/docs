@@ -1,12 +1,9 @@
 ---
 title: "Tutorial #3: Guestbook App with Redis and Nginx"
 aliases:
-    - tutorial-guestbook.html
+    - /quickstart/kubernetes/tutorial-guestbook/
+    - /quickstart/kubernetes/tutorial-guestbook.html
     - /quickstart/kubernetes-guestbook.html
-menu:
-  quickstart:
-    parent: kubernetes-workloads
-    weight: 6
 ---
 
 In this tutorial, we'll build and deploy
@@ -34,7 +31,7 @@ You need to have the Pulumi CLI and a working Kubernetes cluster.
 [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube) is an easy way to get started.
 
 1. [Install Pulumi]({{< relref "/reference/install.md" >}})
-2. [Connect Pulumi to a Kubernetes Cluster]({{< relref "setup.md" >}})
+2. [Connect Pulumi to a Kubernetes Cluster]({{< relref "/reference/clouds/kubernetes/setup.md" >}})
 
 ## Running the Guestbook
 

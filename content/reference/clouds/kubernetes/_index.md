@@ -1,6 +1,12 @@
 ---
-title: Kubernetes Provider Overview
-aliases: ["/reference/kubernetes.html"]
+title: Kubernetes
+aliases:
+  - /quickstart/kubernetes/
+  - /reference/kubernetes.html
+menu:
+  reference:
+    parent: clouds
+    identifier: clouds-kubernetes
 ---
 
 <img src="/images/quickstart/k8s-purple.png" align="right">

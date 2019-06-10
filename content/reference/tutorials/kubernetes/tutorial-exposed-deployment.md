@@ -1,10 +1,8 @@
 ---
 title: "Tutorial #1: Hello, World!"
-aliases: ["tutorial-exposed-deployment.html"]
-menu:
-  quickstart:
-    parent: kubernetes-workloads
-    weight: 6
+aliases:
+  - /quickstart/kubernetes/tutorial-exposed-deployment/
+  - /quickstart/kubernetes/tutorial-exposed-deployment.html
 ---
 
 In this tutorial, we'll deploy `nginx` to a Kubernetes cluster, and publicly expose it to the
@@ -26,7 +24,7 @@ Start by downloading the example code
 
 If you haven't already, follow the steps in [Pulumi Installation and
 Setup]({{< relref "/reference/install.md" >}}) and [Configuring Pulumi
-Kubernetes]({{< relref "/quickstart/kubernetes/setup.md" >}}) to get setup with
+Kubernetes]({{< relref "/reference/clouds/kubernetes/setup.md" >}}) to get setup with
 Pulumi and Kubernetes.
 
 Now, install dependencies:

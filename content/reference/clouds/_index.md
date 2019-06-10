@@ -17,7 +17,7 @@ To quickly get started with Pulumi see the [Get Started]({{< relref "/quickstart
 * [AWS]({{< relref "./aws" >}})
 * [Azure]({{< relref "./azure" >}})
 * [Google Cloud]({{< relref "./gcp" >}})
-* Kubernetes
+* [Kubernetes]({{< relref "./kubernetes" >}})
 * Open Stack
 
 If your cloud isn't listed, it is possible we have it on [GitHub](https://github.com/pulumi) and/or in

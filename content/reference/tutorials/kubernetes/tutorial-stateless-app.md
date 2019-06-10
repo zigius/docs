@@ -1,10 +1,8 @@
 ---
 title: "Tutorial #6: Run a Stateless App Deployment"
-aliases: ["tutorial-stateless-app.html"]
-menu:
-  quickstart:
-    parent: kubernetes-workloads
-    weight: 6
+aliases:
+  - /quickstart/kubernetes/tutorial-stateless-app/
+  - /quickstart/kubernetes/tutorial-stateless-app.html
 ---
 
 In this tutorial, we'll run an application using a [Kubernetes
@@ -33,7 +31,7 @@ You need to have the Pulumi CLI and a working Kubernetes cluster.
 [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube) is an easy way to get started.
 
 1. [Install Pulumi]({{< relref "/reference/install.md" >}})
-2. [Connect Pulumi to a Kubernetes Cluster]({{< relref "setup.md" >}})
+2. [Connect Pulumi to a Kubernetes Cluster]({{< relref "/reference/clouds/kubernetes/setup.md" >}})
 
 ## Creating and Running the Application
 

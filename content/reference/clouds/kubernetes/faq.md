@@ -1,11 +1,8 @@
 ---
 title: FAQ
-aliases: ["faq.html"]
-menu:
-  quickstart:
-    identifier: kubernetes-faq
-    parent: kubernetes
-    weight: 3
+aliases:
+  - /quickstart/kubernetes/faq/
+  - /quickstart/kubernetes/faq.html
 ---
 
 {{< mini-toc >}}
