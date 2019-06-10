@@ -1,5 +1,6 @@
 ---
 title: Get Started with Google Cloud
+weight: 1
 menu:
   quickstart:
     identifier: gcp
@@ -11,4 +12,6 @@ This guide is intended to help you quickly get started provisioning infrastructu
 
 TODO brief summary of guide
 
-TODO NEXT
+Let's start with installing Pulumi.
+
+{{< get-started-stepper >}}
