@@ -1,6 +1,12 @@
 ---
-title: Google Cloud Provider Overview
-aliases: ["/reference/gcp.html"]
+title: Google Cloud
+aliases:
+    - /quickstart/gcp/
+    - /reference/gcp.html
+menu:
+  reference:
+    parent: clouds
+    identifier: clouds-gcp
 ---
 
 <img src="/images/quickstart/gcp-purple.png" align="right">
@@ -15,7 +21,9 @@ The GCP provider supports several options for providing access to Google Cloud c
 
 ## Getting Started
 
-The easiest way to start with Pulumi for GCP is to follow the tutorial:
+The quickest way to get started with GCP is to follow the [Get Started]({{< relref "/quickstart/gcp" >}}) guide.
+
+Additionally, a tutorial is available to follow:
 
 * [Virtual Machine]({{< relref "tutorial-gce-webserver.md" >}}): Create a Debian virtual machine web server instance
 

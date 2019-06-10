@@ -123,6 +123,6 @@ In the next lab, we will see how to consume these stack outputs to provision app
 
 [aws-cli]: {{< relref "/reference/clouds/aws/setup.md" >}}
 [az-cli]: {{< relref "/reference/clouds/azure/setup.md" >}}
-[gcp-cli]: {{< relref "/quickstart/gcp/setup.md" >}}
+[gcp-cli]: {{< relref "/reference/clouds/gcp/setup.md" >}}
 
 [identity]: https://github.com/pulumi/kubernetes-the-prod-way/blob/master/gcp/identity/index.ts

@@ -51,6 +51,6 @@ instructions [here][kubectl].
 
 [aws-setup]: {{< relref "/reference/clouds/aws/setup.md" >}}
 [azure-setup]: {{< relref "/reference/clouds/azure/setup.md" >}}
-[gcp-setup]: {{< relref "/quickstart/gcp/setup.md" >}}
+[gcp-setup]: {{< relref "/reference/clouds/gcp/setup.md" >}}
 
 [kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/

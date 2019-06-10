@@ -117,7 +117,7 @@ Next, you'll need to configure your cloud credentials. This is dependent on your
 
 * `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for [AWS]({{< relref "/reference/clouds/aws/setup.md" >}})
 * `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, and `ARM_TENANT_ID` for [Azure]({{< relref "/reference/clouds/azure/setup.md" >}})
-* `GOOGLE_CREDENTIALS` for [GCP]({{< relref "/quickstart/gcp/setup.md" >}})
+* `GOOGLE_CREDENTIALS` for [GCP]({{< relref "/reference/clouds/gcp/setup.md" >}})
 * `KUBECONFIG` for [Kubernetes]({{< relref "/quickstart/kubernetes/setup.md" >}})
 
 Enter these as secrets, just like you did `PULUMI_ACCESS_TOKEN`, so that your GitHub Action can deploy to your cloud.
