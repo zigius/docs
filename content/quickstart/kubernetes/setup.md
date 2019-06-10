@@ -20,7 +20,7 @@ menu:
 [provider-args]: {{< relref "/reference/pkg/nodejs/pulumi/kubernetes#ProviderArgs" >}}
 [provider-kubeconfig]: {{< relref "/reference/pkg/nodejs/pulumi/kubernetes#ProviderArgs-kubeconfig" >}}
 [kubeconfig]: https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/
-[install]: {{< relref "/quickstart/install.md" >}}
+[install]: {{< relref "/reference/install.md" >}}
 [nodejs]: https://nodejs.org/en/
 [npm]: https://www.npmjs.com/get-npm
 [yarn]: https://yarnpkg.com/en/docs/install
