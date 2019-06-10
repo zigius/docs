@@ -21,7 +21,7 @@ Choosing `yes` will create resources in AWS. This may take a minute or two.
 
 [TODO INSERT SCREENSHOT OF UPDATE]
 
-[TODO mention the stack output (the bucket name).]
+[TODO mention the stack output.]
 
 Next, we'll make some modifications to the program.
 

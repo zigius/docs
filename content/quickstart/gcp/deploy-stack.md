@@ -21,7 +21,7 @@ Choosing `yes` will create resources in Google Cloud. This may take a minute or 
 
 [TODO INSERT SCREENSHOT OF UPDATE]
 
-[TODO mention the stack output (the bucket name).]
+[TODO mention the stack output.]
 
 Next, we'll make some modifications to the program.
 
