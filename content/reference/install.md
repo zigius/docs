@@ -6,7 +6,7 @@ aliases:
     - /install/
 menu:
   reference:
-    weight: 11
+    weight: 13
 ---
 
 {{< comment >}}
