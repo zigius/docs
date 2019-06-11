@@ -7,7 +7,9 @@ menu:
     identifier: gcp-configure
 ---
 
-TODO Inline a streamlined https://pulumi.io/quickstart/gcp/setup/
+<!-- TODO inline a streamlined version of configuring the cloud here. -->
+
+<a href="{{< relref "/reference/clouds/gcp/setup.md" >}}" target="_blank">Configure Google Cloud</a>.
 
 Next, we'll create a new project.
 
