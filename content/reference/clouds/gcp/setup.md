@@ -4,6 +4,10 @@ aliases:
     - /quickstart/gcp/setup/
     - /quickstart/gcp/setup.html
     - /install/gcp.html
+menu:
+  reference:
+    parent: clouds-gcp
+    identifier: clouds-gcp-setup
 ---
 
 [Pulumi Google Cloud Platform Provider]: {{< relref "./" >}}
