@@ -7,7 +7,9 @@ menu:
     identifier: kubernetes-configure
 ---
 
-TODO Inline a streamlined https://pulumi.io/quickstart/kubernetes/setup/
+<!-- TODO inline a streamlined version of configuring the cloud here. -->
+
+<a href="{{< relref "/reference/clouds/kubernetes/setup.md" >}}" target="_blank">Configure Kubernetes</a>.
 
 Next, we'll create a new project.
 
