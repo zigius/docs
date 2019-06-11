@@ -1,5 +1,5 @@
 ---
-title: "Tutorials: AWS"
+title: "AWS"
 menu:
   reference:
     parent: tutorials

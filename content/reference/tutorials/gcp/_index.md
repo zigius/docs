@@ -1,5 +1,5 @@
 ---
-title: "Tutorials: Google Cloud"
+title: "Google Cloud"
 menu:
   reference:
     parent: tutorials

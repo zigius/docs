@@ -1,5 +1,5 @@
 ---
-title: "Tutorials: Kubernetes"
+title: "Kubernetes"
 menu:
   reference:
     parent: tutorials

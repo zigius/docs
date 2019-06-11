@@ -1,5 +1,5 @@
 ---
-title: "Tutorials: Azure"
+title: "Azure"
 menu:
   reference:
     parent: tutorials
