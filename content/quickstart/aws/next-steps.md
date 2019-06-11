@@ -1,9 +1,9 @@
 ---
 title: Next Steps
+weight: 11
 menu:
   quickstart:
     parent: aws
-    weight: 10
 ---
 
 From here, you can dive deeper:
@@ -17,4 +17,4 @@ From here, you can dive deeper:
   - [Multi-cloud Serverless plus Containers]({{< relref "../cloudfx/tutorial-thumbnailer.md" >}}): Create a multi-cloud video
         thumbnail app that uses containers, serverless, and infrastructure together
 
-{{< aws-get-started >}}
+{{< get-started-stepper >}}

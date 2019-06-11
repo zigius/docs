@@ -1,0 +1,15 @@
+{{- $inner := .Inner -}}
+{{- with .Get 0 -}}
+{{- if eq . "nodejs" -}}
+<div class="language-prologue-javascript"></div>
+{{ $inner }}
+
+<div class="language-prologue-typescript"></div>
+{{ $inner }}
+{{- else -}}
+<div class="language-prologue-{{ . }}"></div>
+{{ $inner }}
+{{- end -}}
+{{- else -}}
+{{- errorf "missing param: %s" .Position -}}
+{{- end -}}

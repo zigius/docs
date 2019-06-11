@@ -1,9 +1,9 @@
 ---
 title: Destroy the Stack
+weight: 10
 menu:
   quickstart:
     parent: aws
-    weight: 9
 ---
 
 To destroy resources, run the following:
@@ -14,5 +14,6 @@ $ pulumi destroy
 
 Once confirmed, Pulumi will remove all the AWS resources you've created. The stack itself is preserved in the Pulumi service and is ready to go again as needed.
 
+Next, we'll look at next steps.
 
-{{< aws-get-started >}}
+{{< get-started-stepper >}}

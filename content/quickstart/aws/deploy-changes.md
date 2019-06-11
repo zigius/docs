@@ -1,9 +1,9 @@
 ---
 title: Deploy the Changes
+weight: 8
 menu:
   quickstart:
     parent: aws
-    weight: 7
 ---
 
 Now let's deploy our changes.
@@ -22,4 +22,6 @@ Choosing `yes` will proceed with the update.
 
 [TODO: mention the outputs, curl the output, or open in web browser (screenshot)]
 
-{{< aws-get-started >}}
+Next, we'll look at managing the stack.
+
+{{< get-started-stepper >}}

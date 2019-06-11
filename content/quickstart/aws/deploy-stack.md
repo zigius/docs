@@ -1,9 +1,9 @@
 ---
 title: Deploy the Stack
+weight: 6
 menu:
   quickstart:
     parent: aws
-    weight: 5
 ---
 
 Let's go ahead and deploy the stack:
@@ -22,4 +22,6 @@ Choosing `yes` will create resources in AWS. This may take a minute or two.
 
 [TODO mention the stack output (the bucket name).]
 
-{{< aws-get-started >}}
+Next, we'll make some modifications to the program.
+
+{{< get-started-stepper >}}

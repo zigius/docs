@@ -1,11 +1,13 @@
 ---
 title: Install Pulumi
+weight: 2
 menu:
   quickstart:
     parent: aws
-    weight: 1
 ---
 
 {{< install-pulumi >}}
 
-{{< aws-get-started >}}
+Next, we'll install the required language runtime.
+
+{{< get-started-stepper >}}

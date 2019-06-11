@@ -1,9 +1,9 @@
 ---
 title: Modify the Program
+weight: 7
 menu:
   quickstart:
     parent: aws
-    weight: 6
 ---
 
 Let's update our program to do something a little more interesting. Replace the entire contents of {{< langfile >}} with the following:
@@ -17,29 +17,19 @@ const aws = require("@pulumi/aws");
 const awsx = require("@pulumi/awsx");
 
 // Create a public HTTP endpoint (using AWS APIGateway)
-const endpoint = new awsx.apigateway.API("hello", {
-    routes: [
-        // Serve static files from the `www` folder (using AWS S3)
-        {
-            path: "/",
-            localPath: "www",
+const endpoint = new awsx.apigateway.API("example", {
+    routes: [{
+        path: "/",
+        method: "GET",
+        eventHandler: async (event) => {
+            // This code runs in an AWS Lambda and will be invoked any time `/` is hit.
+            return {
+                statusCode: 200,
+                body: "hello",
+            };
         },
-
-        // Serve a simple REST API on `GET /name` (using AWS Lambda)
-        {
-            path: "/source",
-            method: "GET",
-            eventHandler: (req, ctx, cb) => {
-                cb(undefined, {
-                    statusCode: 200,
-                    body: Buffer.from(JSON.stringify({ name: "AWS" }), "utf8").toString("base64"),
-                    isBase64Encoded: true,
-                    headers: { "content-type": "application/json" },
-                });
-            },
-        },
-    ],
-});
+    }],
+})
 
 // Export the public URL for the HTTP service
 exports.url = endpoint.url;
@@ -51,29 +41,19 @@ import * as aws from "@pulumi/aws";
 import * as awsx from "@pulumi/awsx";
 
 // Create a public HTTP endpoint (using AWS APIGateway)
-const endpoint = new awsx.apigateway.API("hello", {
-    routes: [
-        // Serve static files from the `www` folder (using AWS S3)
-        {
-            path: "/",
-            localPath: "www",
+const endpoint = new awsx.apigateway.API("example", {
+    routes: [{
+        path: "/",
+        method: "GET",
+        eventHandler: async (event) => {
+            // This code runs in an AWS Lambda and will be invoked any time `/` is hit.
+            return {
+                statusCode: 200,
+                body: "hello",
+            };
         },
-
-        // Serve a simple REST API on `GET /name` (using AWS Lambda)
-        {
-            path: "/source",
-            method: "GET",
-            eventHandler: (req, ctx, cb) => {
-                cb(undefined, {
-                    statusCode: 200,
-                    body: Buffer.from(JSON.stringify({ name: "AWS" }), "utf8").toString("base64"),
-                    isBase64Encoded: true,
-                    headers: { "content-type": "application/json" },
-                });
-            },
-        },
-    ],
-});
+    }],
+})
 
 // Export the public URL for the HTTP service
 export const url = endpoint.url;
@@ -85,4 +65,6 @@ export const url = endpoint.url;
 
 TODO describe the program
 
-{{< aws-get-started >}}
+Next, we'll deploy the changes.
+
+{{< get-started-stepper >}}

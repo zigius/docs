@@ -1,17 +1,21 @@
 ---
 title: Install Language Runtime
+weight: 3
 menu:
   quickstart:
     parent: aws
-    weight: 2
 ---
 
-  * **TypeScript** or **JavaScript**
+## Choose Your Language
 
-    To use Pulumi with TypeScript or JavaScript, {{< install-node >}}
+  * **JavaScript** or **TypeScript**
+
+    {{< install-node >}} to use JavaScript, TypeScript, or any other Node.js compatible language with Pulumi.
 
   * **Python**
 
-    To use Pulumi with Python, {{< install-python >}}
+    {{< install-python >}} to use Python with Pulumi.
 
-{{< aws-get-started >}}
+Next, we'll configure AWS.
+
+{{< get-started-stepper >}}

@@ -1,5 +1,6 @@
 ---
 title: Get Started with AWS
+weight: 1
 menu:
   quickstart:
     identifier: aws
@@ -7,8 +8,10 @@ menu:
     weight: 3
 ---
 
-This guide is intended to help you quickly get started with Pulumi and AWS.
+This guide is intended to help you quickly get started provisioning infrastructure on AWS with Pulumi.
 
-<!-- TODO brief summary of guide -->
+TODO brief summary of this guide.
 
-{{< aws-get-started >}}
+Let's start with installing Pulumi.
+
+{{< get-started-stepper >}}

@@ -7,7 +7,7 @@ menu:
     weight: 4
 ---
 
-This guide is intended to help you quickly get started with Pulumi and Google Cloud.
+This guide is intended to help you quickly get started provisioning infrastructure on Google Cloud with Pulumi.
 
 TODO brief summary of guide
 

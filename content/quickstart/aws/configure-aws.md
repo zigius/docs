@@ -1,11 +1,13 @@
 ---
 title: Configure AWS
+weight: 4
 menu:
   quickstart:
     parent: aws
-    weight: 3
 ---
 
 TODO Inline a streamlined https://pulumi.io/quickstart/aws/setup/
 
-{{< aws-get-started >}}
+Next, we'll create a new project.
+
+{{< get-started-stepper >}}
