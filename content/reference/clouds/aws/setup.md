@@ -4,6 +4,10 @@ aliases:
     - /quickstart/aws/setup/
     - /quickstart/aws/setup.html
     - /install/aws.html
+menu:
+  reference:
+    parent: clouds-aws
+    identifier: clouds-aws-setup
 ---
 
 <!-- LINKS -->
