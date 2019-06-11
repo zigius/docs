@@ -2,6 +2,11 @@
 title: Introduction
 aliases:
   - /quickstart/kubernetes/introduction/
+menu:
+  reference:
+    parent: clouds-kubernetes
+    identifier: clouds-kubernetes-intro
+    weight: 1
 ---
 
 ## Using Pulumi

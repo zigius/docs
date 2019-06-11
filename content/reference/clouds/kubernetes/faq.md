@@ -3,6 +3,11 @@ title: FAQ
 aliases:
   - /quickstart/kubernetes/faq/
   - /quickstart/kubernetes/faq.html
+menu:
+  reference:
+    parent: clouds-kubernetes
+    identifier: clouds-kubernetes-faq
+    weight: 3
 ---
 
 {{< mini-toc >}}
