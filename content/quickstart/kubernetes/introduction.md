@@ -28,8 +28,7 @@ Kubernetes [upstream][upstream].
 In addition to being compatible with all existing Kubernetes workflows, Pulumi provides several
 advantages:
 
--   **Drop-in replacement for kubectl or Helm.** For workload orchestration and deployments to a running cluster, Pulumi is used instead of the typical Kubernetes deployment tools. See
-    the [FAQ][faq] for more detail.
+-   **A great complement to kubectl.** `kubectl` is the standard for cluster operations in Kubernetes. However, `kubectl` is user-driven in certain uses (e.g. `get`, `describe`), and server-driven in others (e.g. `apply`). Pulumi excels at workload orchestration, API resource lifecycle management, and [cluster management][cluster-management] by providing rich diffs and deterministic Infrastructure-as-Code primitives. Pulumi takes the guesswork out of updates with comprehensive previews of planned changes, and controlled rollouts that use a [create-before-replace][create-before-replace] / blue-green deployment strategy. See the Kubernetes [FAQ][faq], and the Pulumi [Programming Model][programming-model] for more detail.
 -   **Proactive reports of errors if resource initialization fails.** If Pulumi understands why a
     resource failed to become healthy, it will tell you at provisioning time -- no more guesswork
     with `kubectl get`.
@@ -64,3 +63,6 @@ Check out [Pulumi: A Better Way to Kubernetes][better-way-to-k8s] for details!
 [aurora]: https://aws.amazon.com/rds/aurora/
 [pulumi-k8s]: https://github.com/pulumi/pulumi-kubernetes
 [better-way-to-k8s]: https://blog.pulumi.com/pulumi-a-better-way-to-kubernetes
+[create-before-replace]: {{< relref "/reference/programming-model.md#autonaming" >}}
+[programming-model]: {{< relref "/reference/programming-model.md" >}}
+[cluster-management]: {{< relref "/quickstart/kubernetes/tutorial-clusters" >}}
