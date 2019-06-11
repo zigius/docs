@@ -7,7 +7,9 @@ menu:
     identifier: azure-configure
 ---
 
-TODO Inline a streamlined https://pulumi.io/quickstart/azure/setup/
+<!-- TODO inline a streamlined version of configuring the cloud here. -->
+
+<a href="{{< relref "/reference/clouds/azure/setup.md" >}}" target="_blank">Configure Azure</a>.
 
 Next, we'll create a new project.
 
