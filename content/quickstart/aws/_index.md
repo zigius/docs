@@ -10,7 +10,7 @@ menu:
 
 This guide is intended to help you quickly get started provisioning infrastructure on AWS with Pulumi.
 
-TODO brief summary of this guide.
+<!-- TODO embellish the summary/overview of the guide. -->
 
 Let's start with installing Pulumi.
 

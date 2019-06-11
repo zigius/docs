@@ -7,7 +7,9 @@ menu:
     identifier: aws-configure
 ---
 
-TODO Inline a streamlined https://pulumi.io/quickstart/aws/setup/
+<!-- TODO inline a streamlined version of configuring the cloud here. -->
+
+<a href="{{< relref "/reference/clouds/aws/setup.md" >}}" target="_blank">Configure AWS</a>.
 
 Next, we'll create a new project.
 
