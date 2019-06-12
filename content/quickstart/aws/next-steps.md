@@ -7,7 +7,7 @@ menu:
     identifier: aws-next-steps
 ---
 
-We've seen how to quickly get started using Pulumi with AWS.
+We've seen how to quickly get started using AWS with Pulumi.
 
 From here, you can dive deeper with additional AWS tutorials:
 
