@@ -35,7 +35,7 @@ Do you want to perform this update?
   details
 ```
 
-Since we changed our program to no longer create a bucket, Pulumi will delete it, and since our program now defines an EC2 security group and EC2 instance, those resources will be created.
+Pulumi will delete the bucket since we're no longer defining it in our program, and it will create the EC2 security group and EC2 instance since those are now defined in the program.
 
 Choosing `yes` will proceed with the update.
 
