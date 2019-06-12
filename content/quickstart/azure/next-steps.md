@@ -7,8 +7,17 @@ menu:
     identifier: azure-next-steps
 ---
 
-From here, you can dive deeper:
+We've seen how to quickly get started using Azure with Pulumi.
 
-TODO link to other tutorials, examples, etc.
+From here, you can dive deeper with additional Azure tutorials:
+
+* [Azure Container Instances Web Server]({{< relref "tutorial-container-webserver.md" >}}): Create an NGINX web server Azure Container Instance
+
+In addition to the tutorial, several interesting examples are available complete with instructions:
+
+* [Azure Function Apps](https://github.com/pulumi/examples/tree/master/azure-ts-functions): Create a serverless function
+* [Azure AppService with SQL and AppInsights](https://github.com/pulumi/examples/tree/master/azure-ts-appservice): Build an AppService web application that uses SQL and AppInsights
+* [Azure Kubernetes Service (AKS) Cluster](https://github.com/pulumi/examples/tree/master/azure-ts-aks-helm): Create an AKS cluster and deploy a Helm Chart into it
+* [Azure CosmosDB, AKS and Node.js](https://github.com/pulumi/examples/tree/master/azure-ts-aks-mean): Stands up an AKS cluster and a MongoDB-flavored instance of CosmosDB used by a Node.js application.
 
 {{< get-started-stepper >}}
