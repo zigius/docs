@@ -9,7 +9,7 @@ menu:
 
 <!-- TODO inline a streamlined version of configuring the cloud here. -->
 
-<a href="{{< relref "/reference/clouds/gcp/setup.md" >}}" target="_blank">Configure Google Cloud</a>.
+<a href="{{< relref "/reference/clouds/gcp/setup.md" >}}" target="_blank">Configure Google Cloud</a> so the Pulumi CLI can connect to Google Cloud.
 
 Next, we'll create a new project.
 
