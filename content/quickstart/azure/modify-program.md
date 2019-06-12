@@ -12,18 +12,95 @@ Let's update our program to do something a little more interesting. Replace the 
 {{< langchoose nogo >}}
 
 ```javascript
-// TODO
+"use strict";
+const pulumi = require("@pulumi/pulumi");
+const azure = require("@pulumi/azure");
+
+// Create an Azure Resource Group
+const resourceGroup = new azure.core.ResourceGroup("resourceGroup", {
+    location: "WestUS",
+});
+
+// Create an Azure Container Group
+const container = new azure.containerservice.Group("nginx", {
+    containers: [{
+        name: "nginx",
+        image: "nginx",
+        memory: 1,
+        cpu: 1,
+        ports: [{
+            port: 80,
+            protocol: "TCP"
+        }],
+    }],
+    osType: "Linux",
+    resourceGroupName: resourceGroup.name,
+    location: resourceGroup.location,
+});
+
+// Export the public IP of the container
+exports.ip = container.ipAddress;
 ```
 
 ```typescript
-// TODO
+import * as pulumi from "@pulumi/pulumi";
+import * as azure from "@pulumi/azure";
+
+// Create an Azure Resource Group
+const resourceGroup = new azure.core.ResourceGroup("resourceGroup", {
+    location: "WestUS",
+});
+
+// Create an Azure Container Group
+const container = new azure.containerservice.Group("nginx", {
+    containers: [{
+        name: "nginx",
+        image: "nginx",
+        memory: 1,
+        cpu: 1,
+        ports: [{
+            port: 80,
+            protocol: "TCP"
+        }],
+    }],
+    osType: "Linux",
+    resourceGroupName: resourceGroup.name,
+    location: resourceGroup.location,
+});
+
+// Export the public IP of the container
+export const ip = container.ipAddress;
 ```
 
 ```python
-# TODO
+import pulumi
+from pulumi_azure import core, containerservice
+
+# Create an Azure Resource Group
+resource_group = core.ResourceGroup("resource_group",
+    location='WestUS')
+
+# Create an Azure Container Group
+container = containerservice.Group("nginx",
+    containers=[{
+        name: "nginx",
+        image: "nginx",
+        memory: 1,
+        cpu: 1,
+        ports: [{
+            port: 80,
+            protocol: "TCP"
+        }],
+    }],
+    os_type="Linux",
+    resource_group_name=resource_group.name,
+    location=resource_group.location)
+
+# Export the public IP of the container
+pulumi.export('ip', container.ip_address)
 ```
 
-TODO describe the program
+Our program now creates a simple NGINX container to Azure Container Instance (ACI).
 
 Next, we'll deploy the changes.
 
