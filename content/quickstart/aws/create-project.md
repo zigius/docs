@@ -43,7 +43,7 @@ Enter a value or leave blank to accept the (default), and press <ENTER>.
 Press ^C at any time to quit.
 
 project name: (quickstart)
-project description: (A minimal AWS TypeScript Pulumi program)
+project description: (A minimal AWS Pulumi program)
 Created project 'quickstart'
 
 stack name: (dev)
