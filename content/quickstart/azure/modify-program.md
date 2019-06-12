@@ -7,7 +7,9 @@ menu:
     identifier: azure-modify-program
 ---
 
-Let's update our program to do something a little more interesting. Replace the entire contents of {{< langfile >}} with the following:
+Let's update our program to do something a little more interesting.
+
+Replace the entire contents of {{< langfile >}} with the following:
 
 {{< langchoose nogo >}}
 
