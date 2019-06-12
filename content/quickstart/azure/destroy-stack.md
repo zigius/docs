@@ -40,7 +40,6 @@ Resources:
     - 3 deleted
 
 Duration: 53s
-
 ```
 
 To delete the stack itself, run `pulumi stack rm`.
