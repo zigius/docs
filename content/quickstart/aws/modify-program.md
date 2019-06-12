@@ -28,14 +28,14 @@ const ami = "ami-6869aa05" // AMI for us-east-1 (Virginia)
 // const ami  = "ami-f9dd458a" // AMI for eu-west-1 (Ireland)
 // const ami  = "ami-ea26ce85" // AMI for eu-central-1 (Frankfurt)
 
-// Create a new security group for port 80.
+// Create a new security group for port 80
 const group = new aws.ec2.SecurityGroup("web-secgrp", {
     ingress: [
         { protocol: "tcp", fromPort: 80, toPort: 80, cidrBlocks: ["0.0.0.0/0"] },
     ],
 });
 
-// Create a simple web server using the startup script for the instance.
+// Create a simple web server using the startup script for the instance
 const userData =
 `#!/bin/bash
 echo "Hello, World!" > index.html
@@ -49,9 +49,8 @@ const server = new aws.ec2.Instance("web-server-www", {
     userData: userData
 });
 
-// Export the public IP and Host Name.
-exports.publicIp = server.publicIp;
-exports.publicHostName = server.publicDns;
+// Export the host name
+exports.host = server.publicDns;
 ```
 
 ```typescript
@@ -68,14 +67,14 @@ const ami = "ami-6869aa05" // AMI for us-east-1 (Virginia)
 // const ami  = "ami-f9dd458a" // AMI for eu-west-1 (Ireland)
 // const ami  = "ami-ea26ce85" // AMI for eu-central-1 (Frankfurt)
 
-// Create a new security group for port 80.
+// Create a new security group for port 80
 const group = new aws.ec2.SecurityGroup("web-secgrp", {
     ingress: [
         { protocol: "tcp", fromPort: 80, toPort: 80, cidrBlocks: ["0.0.0.0/0"] },
     ],
 });
 
-// Create a simple web server using the startup script for the instance.
+// Create a simple web server using the startup script for the instance
 const userData =
 `#!/bin/bash
 echo "Hello, World!" > index.html
@@ -89,9 +88,8 @@ const server = new aws.ec2.Instance("web-server-www", {
     userData: userData
 });
 
-// Export the public IP and Host Name.
-export const publicIp = server.publicIp;
-export const publicHostName = server.publicDns;
+// Export the host name
+export const host = server.publicDns;
 ```
 
 ```python
@@ -107,14 +105,14 @@ ami = 'ami-6869aa05' # AMI for us-east-1 (Virginia)
 # ami  = 'ami-f9dd458a' # AMI for eu-west-1 (Ireland)
 # ami  = 'ami-ea26ce85' # AMI for eu-central-1 (Frankfurt)
 
-# Create a new security group for port 80.
+# Create a new security group for port 80
 group = ec2.SecurityGroup('web-secgrp',
     description='Enable HTTP access',
     ingress=[
         { 'protocol': 'tcp', 'from_port': 80, 'to_port': 80, 'cidr_blocks': ['0.0.0.0/0'] }
     ])
 
-# Create a simple web server using the startup script for the instance.
+# Create a simple web server using the startup script for the instance
 user_data = """
 #!/bin/bash
 echo "Hello, World!" > index.html
@@ -127,9 +125,8 @@ server = ec2.Instance('web-server-www',
     user_data=user_data,
     ami=ami)
 
-# Export the public IP and Host Name.
-pulumi.export('public_ip', server.public_ip)
-pulumi.export('public_dns', server.public_dns)
+# Export the host name
+pulumi.export('host', server.public_dns)
 ```
 
 Our program now creates a simple EC2 virtual machine running a Python web server.

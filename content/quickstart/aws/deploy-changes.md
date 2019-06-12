@@ -50,9 +50,8 @@ Updating (dev):
  -   └─ aws:s3:Bucket          my-bucket       deleted
 
 Outputs:
-  - bucketName    : "my-bucket-68e33ec"
-  + publicHostName: "ec2-3-86-229-103.compute-1.amazonaws.com"
-  + publicIp      : "3.86.229.103"
+  - bucketName : "my-bucket-68e33ec"
+  + host       : "ec2-3-86-229-103.compute-1.amazonaws.com"
 
 Resources:
     + 2 created
@@ -65,7 +64,7 @@ Duration: 44s
 We can use `pulumi stack output` to get the value of [stack outputs]({{< relref "/reference/stack.md#outputs" >}}) from the CLI. So we can `curl` the EC2 instance to see the HTTP server running there.
 
 ```bash
-$ curl $(pulumi stack output publicHostName)
+$ curl $(pulumi stack output host)
 Hello, World!
 ```
 
