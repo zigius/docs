@@ -23,6 +23,6 @@ Choosing `yes` will proceed with the update.
 
 [TODO: mention the outputs, curl the output, or open in web browser (screenshot)]
 
-Next, we'll look at managing the stack.
+Next, we'll destroy the stack.
 
 {{< get-started-stepper >}}
