@@ -31,7 +31,7 @@ Do you want to perform this update?
   details
 ```
 
-Choosing `yes` will create resources in AWS. This may take a minute or two.
+Choosing `yes` will create resources in AWS.
 
 ```
 Do you want to perform this update? yes

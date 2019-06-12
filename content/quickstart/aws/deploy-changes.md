@@ -13,15 +13,61 @@ Now let's deploy our changes.
 $ pulumi up
 ```
 
-[TODO INSERT SCREENSHOT OF THE PREVIEW]
+Pulumi computes the minimally disruptive change to achieve the desired state described by the program.
 
-Since we changed our program to no longer create a bucket, Pulumi will take care of destroying it, and then creating the new resources from our modifications.
+```
+Previewing update (dev):
+
+     Type                      Name            Plan
+     pulumi:pulumi:Stack       quickstart-dev
+ +   ├─ aws:ec2:SecurityGroup  web-secgrp      create
+ +   ├─ aws:ec2:Instance       web-server-www  create
+ -   └─ aws:s3:Bucket          my-bucket       delete
+
+Resources:
+    + 2 to create
+    - 1 to delete
+    2 changes. 1 unchanged
+
+Do you want to perform this update?
+  yes
+> no
+  details
+```
+
+Since we changed our program to no longer create a bucket, Pulumi will delete it, and since our program now defines an EC2 security group and EC2 instance, those resources will be created.
 
 Choosing `yes` will proceed with the update.
 
-[TODO INSERT SCREENSHOT OF UPDATE]
+```
+Do you want to perform this update? yes
+Updating (dev):
 
-[TODO: mention the outputs, curl the output, or open in web browser (screenshot)]
+     Type                      Name            Status
+     pulumi:pulumi:Stack       quickstart-dev
+ +   ├─ aws:ec2:SecurityGroup  web-secgrp      created
+ +   ├─ aws:ec2:Instance       web-server-www  created
+ -   └─ aws:s3:Bucket          my-bucket       deleted
+
+Outputs:
+  - bucketName    : "my-bucket-68e33ec"
+  + publicHostName: "ec2-3-86-229-103.compute-1.amazonaws.com"
+  + publicIp      : "3.86.229.103"
+
+Resources:
+    + 2 created
+    - 1 deleted
+    2 changes. 1 unchanged
+
+Duration: 44s
+```
+
+We can use `pulumi stack output` to get the value of [stack outputs]({{< relref "/reference/stack.md#outputs" >}}) from the CLI. So we can `curl` the EC2 instance to see the HTTP server running there.
+
+```bash
+$ curl $(pulumi stack output publicHostName)
+Hello, World!
+```
 
 Next, we'll destroy the stack.
 

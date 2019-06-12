@@ -61,7 +61,7 @@ Next, you will be asked for the name of a stack. You can hit enter to accept the
 
 Next, you will be prompted for some configuration values for the stack.
 
-For AWS projects, you will be prompted for the AWS region. You can accept the default value of `us-east-1` or choose another region, such as `us-west-2`.
+For AWS projects, you will be prompted for the AWS region. For this guide, be sure to accept the default value of `us-east-1`.
 
 {{% lang nodejs %}}
 After some dependency installations from `npm`, you'll see some files have been generated:
