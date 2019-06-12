@@ -14,7 +14,7 @@
 </div>
 
 <div class="install_windows">
-    <p>Install Pulumi on Windows by running the installation script from a `cmd.exe` window:</p>
+    <p>Install Pulumi on Windows by running the installation script from a <code>cmd.exe</code> window:</p>
     <div class="highlight">
         <pre class="chroma"><code class="language-batch" data-lang="batch">@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://get.pulumi.com/install.ps1'))" && SET "PATH=%PATH%;%USERPROFILE%\.pulumi\bin"</code></pre>
     </div>
