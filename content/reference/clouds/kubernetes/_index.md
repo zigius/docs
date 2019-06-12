@@ -100,12 +100,12 @@ you can obtain them by following [this guide]({{< relref "setup.md" >}}).
 
 The tutorials are:
 
--   **[New to Pulumi]** [Getting started with Pulumi.]({{< relref "tutorial-configmap-rollout.md" >}}) This
+-   **[New to Pulumi]** [Getting started with Pulumi.]({{< relref "/reference/tutorials/kubernetes/tutorial-configmap-rollout.md" >}}) This
     application shows the basics of managing a Kubernetes application with Pulumi. We will see how
     Pulumi's diffing and planning features makes it easy to understand the blast radius of a change.
     We will also see how Pulumi proactively presents information about resources that fail to
     initialize during a rollout.
--   **[New to Pulumi]** ["Adopting" a Helm Chart]({{< relref "tutorial-wordpress-chart.md" >}}).
+-   **[New to Pulumi]** ["Adopting" a Helm Chart]({{< relref "/reference/tutorials/kubernetes/tutorial-wordpress-chart.md" >}}).
     This tutorial deploys a simple Helm Chart on a Kubernetes cluster.
 
 ### Using a cluster provisioned by Pulumi
@@ -116,7 +116,7 @@ clouds, so there is not a common "Prerequisites" section, except what you've alr
 Pulumi.
 
 -   **[Advanced Pulumi user]** [Standing up an AKS cluster, Mongo-flavored CosmosDB, and a Helm
-    Chart that uses it for persistent data storage.]({{< relref "tutorial-p8s-rollout.md" >}}) This tutorial is
+    Chart that uses it for persistent data storage.]({{< relref "/reference/tutorials/kubernetes/tutorial-p8s-rollout.md" >}}) This tutorial is
     similar in flavor to the lifecycle tutorial, except rollouts are staged, gated on Prometheus
     health checks. This allows us to roll out to a small canary ring, check Prometheus metrics, and
     then roll out to a larger prod ring only when that succeeds.
@@ -132,7 +132,7 @@ identity, managed infrastructure (_e.g._, databases, Kubernetes clusters).
 You can find additional examples Kubernetes examples in [the Pulumi examples
 repo](https://github.com/pulumi/examples).
 
-<!-- -   **[New to Kubernetes & Pulumi]** [Getting started with Kubernetes.]({{< relref "tutorial-guestbook.md" >}})
+<!-- -   **[New to Kubernetes & Pulumi]** [Getting started with Kubernetes.]({{< relref "/reference/tutorials/kubernetes/tutorial-guestbook.md" >}})
     This tutorial deploys a Pulumi-native adaptation of the canonical [Kubernetes Guestbook
     example][guestbook]. Kubernetes and exposing it to the Internet with a `Service`. In addition to
     very simple Kubernetes resource types, this example shows off several unique features of Pulumi,
