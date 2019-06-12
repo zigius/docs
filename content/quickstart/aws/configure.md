@@ -9,7 +9,7 @@ menu:
 
 <!-- TODO inline a streamlined version of configuring the cloud here. -->
 
-<a href="{{< relref "/reference/clouds/aws/setup.md" >}}" target="_blank">Configure AWS</a>.
+<a href="{{< relref "/reference/clouds/aws/setup.md" >}}" target="_blank">Configure AWS</a> so the Pulumi CLI can connect to AWS.
 
 Next, we'll create a new project.
 
