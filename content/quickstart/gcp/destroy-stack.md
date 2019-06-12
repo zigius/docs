@@ -7,14 +7,45 @@ menu:
     identifier: gcp-destroy-stack
 ---
 
+Now that we've seen how to deploy changes to our program, let's clean up and tear down the resources that are part of our stack.
+
 To destroy resources, run the following:
 
 ```bash
 $ pulumi destroy
 ```
 
-Once confirmed, Pulumi will remove all the Google Cloud resources you've created. The stack itself is preserved in the Pulumi service and is ready to go again as needed.
+You'll be prompted to make sure you really want to delete these resources. This can take several minutes; Pulumi waits for the virtual machine instance to shutdown and for the compute network to be removed before it considers the destroy operation to be complete.
 
-Next, we'll look at next steps.
+```
+Previewing destroy (dev):
+
+     Type                     Name            Plan
+ -   pulumi:pulumi:Stack      quickstart-dev  delete
+ -   ├─ gcp:compute:Instance  instance        delete
+ -   ├─ gcp:compute:Firewall  firewall        delete
+ -   └─ gcp:compute:Network   network         delete
+
+Resources:
+    - 4 to delete
+
+Do you want to perform this destroy? yes
+Destroying (dev):
+
+     Type                     Name            Status
+ -   pulumi:pulumi:Stack      quickstart-dev  deleted
+ -   ├─ gcp:compute:Instance  instance        deleted
+ -   ├─ gcp:compute:Firewall  firewall        deleted
+ -   └─ gcp:compute:Network   network         deleted
+
+Resources:
+    - 4 deleted
+
+Duration: 6m1s
+```
+
+To delete the stack itself, run `pulumi stack rm`.
+
+Next, we'll look at some next steps.
 
 {{< get-started-stepper >}}

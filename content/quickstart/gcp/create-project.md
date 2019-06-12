@@ -111,7 +111,7 @@ bucket = storage.Bucket('my-bucket')
 pulumi.export('bucket_name',  bucket.url)
 ```
 
-This Pulumi program creates a storage bucket and exports the DNS name of the bucket.
+This Pulumi program creates a storage bucket and exports the bucket URL.
 
 {{% lang python %}}
 Finally, for Python, run the following commands to create a virtual environment, activate it, and install dependencies:
