@@ -1,3 +1,8 @@
+{{/*
+    Emits PREVIOUS and NEXT buttons based on the pages in the current directory,
+    ordered by page weight.
+*/}}
+
 {{ $currentPage := .Page }}
 
 {{/* Get the pages in the current directory. */}}
@@ -12,16 +17,17 @@
 {{/* Sort by weight. */}}
 {{ $pages := sort $unsortedPages "Weight" }}
 
-{{/* Determine the current step. */}}
+{{/* Set the first and last indexes. */}}
+{{ $first := 0 }}
+{{ $last := sub (len $pages) 1 }}
+
+{{/* Determine the index of the current step. */}}
 {{ $step := -1 }}
 {{ range $index, $element := $pages }}
     {{ if eq $element.RelPermalink $currentPage.RelPermalink }}
         {{ $step = $index }}
     {{ end }}
 {{ end }}
-
-{{ $first := 0 }}
-{{ $last := sub (len $pages) 1 }}
 
 <!-- TODO move the style to .scss -->
 <style>
