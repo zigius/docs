@@ -9,11 +9,7 @@ menu:
 
 We've seen how to quickly get started using Azure with Pulumi.
 
-From here, you can dive deeper with additional Azure tutorials:
-
-* [Azure Container Instances Web Server]({{< relref "tutorial-container-webserver.md" >}}): Create an NGINX web server Azure Container Instance
-
-In addition to the tutorial, several interesting examples are available complete with instructions:
+From here, you can dive deeper with additional Azure examples:
 
 * [Azure Function Apps](https://github.com/pulumi/examples/tree/master/azure-ts-functions): Create a serverless function
 * [Azure AppService with SQL and AppInsights](https://github.com/pulumi/examples/tree/master/azure-ts-appservice): Build an AppService web application that uses SQL and AppInsights
