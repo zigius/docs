@@ -134,6 +134,9 @@ Specify that replacements of the resource will delete the existing resource befo
 ###### `ignoreChanges`
 Provides a list of properties which will be ignored as part of updates. The value of the property will be used for newly created resources, but will not be used as part of updates. This is typically used to avoid changes in properties leading to diffs or to change defaults for a property without forcing all existing deployed stacks to update or replace the affected resource.
 
+###### `additionalSecretOutputs`
+Provides a list of output properties which should be treated as secrets. This value aguments any values that Pulumi detects itself, based on what secret inputs to the resource has. This is typically used to express that for a specific instance of a resource, some of its output properties should be treated as secrets (when they would not normally be).
+
 ### Resource names {#names}
 
 Every resource managed by Pulumi has a name.  This name is used to track the identity of a resource across multiple deployments of the same program.  The name that is specified when a resource is created is used in three ways:
@@ -212,7 +215,7 @@ url := virtualmachine.DnsName().Apply(func(dnsName string) (interface{}, error) 
 
 The `apply` method accepts a callback which will be passed the value of the `Output` when it is available, and which returns the new value.  The result of the call to `apply` is a new `Output` whose value is the value returned from the callback, and which includes the dependencies of the original `Output`.  If the callback itself returns an `Output`, the dependencies of that output are unioned into the dependencies of the returned `Output`.
 
-> _Note_: Several common types of transformations can be done more convienently.  See [Accessing properties of an Output](#lifting) for how to access Output value properties simply.   Also, `Output` itself cannot be used directly in string concatenation as it is not itself the value of the output.  See (Working with Outputs and strings)[#ouputs-and-strings] for examples of how to more simply work use the two together.  For cases where these convenience forms are not sufficient, `.apply` is available the most general way to transform one `Output` into another.  
+> _Note_: Several common types of transformations can be done more convienently.  See [Accessing properties of an Output](#lifting) for how to access Output value properties simply.   Also, `Output` itself cannot be used directly in string concatenation as it is not itself the value of the output.  See [Working with Outputs and strings](#outputs-and-strings) for examples of how to more simply work use the two together.  For cases where these convenience forms are not sufficient, `.apply` is available the most general way to transform one `Output` into another.  
 
 ##### Accessing properties of an Output {#lifting}
 
@@ -365,7 +368,7 @@ def split(input):
 // See https://github.com/pulumi/pulumi/issues/1614.
 ```
 
-##### Working with Outputs and strings {#ouputs-and-strings}
+##### Working with Outputs and strings {#outputs-and-strings}
 
 It's very common to want to build a string out of the values contained in `Outputs`.  Common uses for this are to either provide a custom [stack output](#stack-outputs), or to provide a dynamically computed string as an [Input]({{< relref "pkg/nodejs/pulumi/pulumi#Input" >}}) to another Resource.  For example, say you had the following:
 
@@ -447,6 +450,89 @@ const url2: Output<string> = pulumi.interpolate `http://${hostname}:${port}/`;
 
 `concat` takes a list of arguments that can be `Inputs`, `Outputs`, `Promises` and simple JavaScript values, and creates an `Output` with all their underlying values concatenated together.  `interpolate` does the same, but allows you to use a JavaScript `template literal` if that's your preferred way of combining values into strings.
 
+## Secrets {#secrets}
+
+When constructing resources, Pulumi will record all inputs and outputs from a resource it is state file.  Some of these properties may contain sensitive data, which should be encrypted before being stored in the state file. For example, consider the following program which creates an AWS Parameter Store parameter.
+
+{{< langchoose >}}
+
+```javascript
+const cfg = new pulumi.Config()
+const param = new aws.ssm.Parameter("a-secret-param", {
+    type: "SecureString",
+    value: cfg.require("my-secret-value"),
+});
+```
+
+```typescript
+const cfg = new pulumi.Config()
+const param = new aws.ssm.Parameter("a-secret-param", {
+    type: "SecureString",
+    value: cfg.require("my-secret-value"),
+});
+```
+
+```python
+cfg = pulumi.Config()
+param = ssm.Parameter("a-secret-param",
+    type="SecureString",
+    value=cfg.require("my-secret-value"))
+```
+
+```go
+// Secrets are not yet avaiaible in Go.
+//
+// See https://github.com/pulumi/pulumi/issues/2820
+```
+
+As written, the state file for this program will show the plaintext value of the "my-secret-value" configuration variable as an input to the `Parameter` resource.  Pulumi provides a way to mark a value as "secret" such that if it stored in the state file, it will be encrypted in the same way secret configuration values are.  There are two ways to create secret values:
+
+1. By calling `requireSecret` or `getSecret` (JavaScript) or `require_secret` or `get_secret` (Python) when reading a value from config.
+2. Using `pulumi.secret` (JavaScript) or `Output.secret` (Python) to construct a secret from an existing value.
+
+We can change the above code to look like the following:
+
+{{< langchoose >}}
+
+```javascript
+const cfg = new pulumi.Config()
+const param = new aws.ssm.Parameter("a-secret-param", {
+    type: "SecureString",
+    value: cfg.requireSecret("my-secret-value"),
+});
+```
+
+```typescript
+const cfg = new pulumi.Config()
+const param = new aws.ssm.Parameter("a-secret-param", {
+    type: "SecureString",
+    value: cfg.requireSecret("my-secret-value"),
+});
+```
+
+```python
+cfg = pulumi.Config()
+param = ssm.Parameter("a-secret-param", 
+    type="SecureString",
+    value=cfg.require_secret("my-secret-value"))
+```
+
+```go
+// Secrets are not yet avaiaible in Go.
+//
+// See https://github.com/pulumi/pulumi/issues/2820
+```
+
+In which case the value property of the `Parameter` resource will now be encrypted in the state file.
+
+Secrets behave just like normal `Output`'s in Pulumi (in fact, their type is simply `Output`), except they are marked internally as needed to be encrypted before being persisted in the state file. When you combine an existing Output that is marked as a secret (either via `apply` or `all`) with out values, the resulting Output is also marked as a secret.
+
+> __Note__: During an `apply` you have access to the raw value of the underlying secret.  While Pulumi ensures that the value returned from an `apply` is marked as secret, it can not enforce that any work done inside the `apply` itself will not leak the secret value.  For example, inside an apply you could explicitly make a call to print the value to the console or save it to a file. Becasue of this, care must be taken inside the apply to ensure your code does not cause the value to be leaked.
+
+Unlike regular Outputs, secret outputs cannot be captured by Pulumi closure serialization system and attempting to do so will lead to an exception. We do plan to support this once we can ensure the values will be persisted securely (see [pulumi/pulumi#2718](https://github.com/pulumi/pulumi/issues/2718)).
+
+While Pulumi ensures that any outputs of a resource which have coresponding secret inputs are marked as secrets, there may be additional outputs that you wish to mark as secrets. In this case, you can pass the `additionalSecretOutputs` (JavaScript) or `additional_secret_outputs` (Python) option when creating a resource to ensure these extra output values are encrypted before being stored in the state file.
+
 ## Stack output {#stack-outputs}
 
 A [stack output]({{< relref "stack.md#outputs" >}}) is a value exported from a stack. A stack's outputs can be easily retrieved from the Pulumi CLI and is displayed on pulumi.com. To export values from a stack, use the following definition in the top-level of the entry point for your project:
@@ -518,6 +604,8 @@ $ pulumi stack output --json
 }
 ```
 
+If a stack contains any output values which are marked as secrets, their values will not be shown by default (instead they will be displayed as `[secret]` in the CLI). You may pass `--show-secrets` to `pulumi stack output` to see the plaintext value.
+
 ## Config {#config}
 
 To access configuration values that have been set with `pulumi config set`, use the following:
@@ -584,6 +672,8 @@ console.log(`Active: ${data.active}`);
 // 
 // See https://github.com/pulumi/pulumi/issues/1614.
 ```
+
+The `Config` object also provides functions to get the value from configuration and mark it as a secret. See [config.getSecret] or [config.requireSecret].  Unlike the [config.get] and [config.require], these methods return an `Output<T>` which holds the underlying value and ensures that it is encrypted when it is being persisted.
 
 ## Components {#components}
 
