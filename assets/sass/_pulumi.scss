@@ -178,6 +178,10 @@ $code-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
         margin-bottom: 10px;
     }
 
+    &.large {
+        font-size: 18px;
+    }
+
     &.primary {
         color: #fff;
         background-color: $primary2;
@@ -940,6 +944,16 @@ table.clouds-table td {
     user-select: none;
 }
 
+// Hide adjacent siblings of .language-prologue-* classes from the outset, so they don't all initially
+// show as visible before all but the selected language are hidden.
+.language-prologue-javascript + *,
+.language-prologue-typescript + *,
+.language-prologue-python + *,
+.language-prologue-go + * {
+    display: none;
+}
+
+
 //
 // Styling for Python documentation
 //
@@ -1044,4 +1058,31 @@ div.section[id^="pulumi"] {
     div.toctree-wrapper {
         margin-left: 16px;
     }
+}
+
+.choose-cloud-container {
+    display: flex;
+    flex-direction: column;
+
+    .button {
+        margin-right: inherit !important;
+        padding: 20px;
+        max-width: 500px;
+
+        @media(max-width: $screen-md){
+            max-width: initial;
+        }
+
+        img {
+            height: 50px;
+        }
+    }
+}
+
+.get-started-stepper {
+    margin-top: 24px;
+}
+
+.get-started-lang-install {
+    margin-top: 16px;
 }
