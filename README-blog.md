@@ -12,6 +12,8 @@ Before posting, verify the following things.
 Post metadata is important so that the page shows up correctly in search
 results and has the right metadata markings.
 
+Tool that might help: https://wordcounter.net/
+
 - `title`, the XX word max title for the post.
   - Is the title short and descriptive? Max XX chars, XX words
 - `authors`, the 1 or more people wuo authored the post.
@@ -24,7 +26,7 @@ results and has the right metadata markings.
 - `tags`, the 1 - 4 topics the post is related to.
   - A post should be associated with relevant tags.
   - **Do not** create new tags without first consulting Nishi.
-- `description`, the XX word description.
+- `summary`, the XX word summary. (For blog posts, use this **instead** of `meta_desc`.)
   - The description is used to summarize the post in lists, RSS, and for
     search engine results. So be intentional about keeping it concise, but
     also clear enough to explain what the post is about.
@@ -41,6 +43,19 @@ results and has the right metadata markings.
 
 The post content is in Markdown, but for best results try to follow some conventions.
 
+- Text, try to wrap text at 80 characters.
+  - When dealing with Markdown -- the useful hybrid between raw text and code, it is
+    easier to review and edit text if it is formatted to be easily read within an
+    editor. So try to split text at a natural place around 80 characters if possible.
+- Unicode is AOK.
+  - Feel free to use emoji and other punctionation marks outside of the ASCII
+    character set. (But keep the directory names for the `index.md` files simple.)
+  - Prefer to use the proper em-dash (`—`) instead of two dashes (`--`).
+  - The occasional emoji is also welcome, 😃🍹encouraged.
+- Automatic conversion will be done for some elements.
+  - `...` will be replaced with `…` automatically.
+- Feel free to do what seems most natural when dealing with long links, code blocks
+    etc.
 - Headers, start with `##`
   - When creating headers within the blog post, start with `<h2>` elements, since the post's title
     will be given the `<h1>`.
@@ -53,3 +68,5 @@ The post content is in Markdown, but for best results try to follow some convent
 
 ## Content
 
+- When referencing other posts, use the `{{< relref "previous-post-title" >}}` shortcode.
+- For other pages, use `ref` such as the link `[contact us]({{< /contact >}})`.
