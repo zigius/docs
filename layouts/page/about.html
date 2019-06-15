@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                         <div id="pulumi-team-container" class="row row-centered cols-are-spaced-vert-md vert-top">
-                            {{ range $.Site.Data.team.team }}
+                            {{ range where $.Site.Data.team.team "status" "==" "employee" }}
                                 <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-3 col-centered col">
                                     <div class="content">
                                         <img style="height: 180px; padding-bottom: 16px;" src="{{ $.Site.BaseURL }}/images/team/{{ .id }}.jpg" alt="{{ .name }}" >
