@@ -1,20 +1,17 @@
 ---
 title: "Data science on demand: spinning up a Wallaroo cluster is easy with Pulumi"
 authors: ["marc-holmes", "simon-zelazny"]
-tags: ["infrastructure", "TODO"]
+tags: ["Infrastructure-as-Code", "wip"]
 date: "2018-11-02"
 
-description: "Spinning up Wallaroo labs infrastructure on-demand"
+summary: "This guest post is from Simon Zelazny of Wallaroo Labs. Find out how Wallaroo powered their analytics cluster provisioning with Pulumi, for data science on demand."
 ---
 
-TODO: Need to hook up author information bio for guest posts.
-
-*This guest post is from Simon Zelazny of [Wallaroo
-Labs](https://www.wallaroolabs.com/), and previously appeared on the
-[Wallaroo Labs
-blog](https://blog.wallaroolabs.com/2018/10/spinning-up-a-wallaroo-cluster-is-easy/).
+*This guest post is from Simon Zelazny of
+[Wallaroo Labs](https://www.wallaroolabs.com/), and previously appeared on the
+[Wallaroo Labs blog](https://blog.wallaroolabs.com/2018/10/spinning-up-a-wallaroo-cluster-is-easy/).
 Find out how Wallaroo powered their cluster provisioning with Pulumi,
-for data science on demand. *
+for data science on demand.*
 
 Oh no, more data!
 -----------------

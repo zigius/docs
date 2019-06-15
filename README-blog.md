@@ -43,10 +43,10 @@ Tool that might help: https://wordcounter.net/
 
 The post content is in Markdown, but for best results try to follow some conventions.
 
-- Text, try to wrap text at 80 characters.
+- Text, try to wrap text around 100 characters.
   - When dealing with Markdown -- the useful hybrid between raw text and code, it is
     easier to review and edit text if it is formatted to be easily read within an
-    editor. So try to split text at a natural place around 80 characters if possible.
+    editor. So try to split text at a natural place around 100 characters if possible.
 - Unicode is AOK.
   - Feel free to use emoji and other punctionation marks outside of the ASCII
     character set. (But keep the directory names for the `index.md` files simple.)
@@ -70,3 +70,12 @@ The post content is in Markdown, but for best results try to follow some convent
 
 - When referencing other posts, use the `{{< relref "previous-post-title" >}}` shortcode.
 - For other pages, use `ref` such as the link `[contact us]({{< /contact >}})`.
+
+For an example of when to use one or the other, consider:
+
+```markdown
+scenarios, and are excited to share what we've been up to. You can
+[dive right in here]({{< ref "/docs/quickstart/kubernetes" >}}) and
+look at some
+[powerful things Pulumi enables here]({{< relref "program-kubernetes-with-11-cloud-native-pulumi-pearls" >}}).
+```
