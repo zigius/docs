@@ -103,15 +103,15 @@ the downstream stack `<org-name-in-pulumi>/sample-k8sapp/dev`
 provided the cycle of `pulumi preview` and `pulumi deploy` completes
 without any failure.
 
-![](./image-4.webp)
+![No failures](./image-4.webp)
 
 4.  To use Pulumi within GitLab CI, there are a few environment
     variables you'll need to set for each build.
     -   The first is `PULUMI_ACCESS_TOKEN`, which is required to
-        authenticate with **[pulumi.com](http://pulumi.com)** in order
+        authenticate with [**pulumi.com**](http://pulumi.com) in order
         to perform the preview or update. You can create a new Pulumi
-        access token specifically for your CI/CD job on your [Pulumi
-        Account page](https://app.pulumi.com/account/tokens).
+        access token specifically for your CI/CD job on your
+        [Pulumi Account page](https://app.pulumi.com/account/tokens).
     -   Next, you will also need to set environment variables specific
         to your cloud resource provider. For example, if your stack is
         managing resources on AWS, `AWS_ACCESS_KEY_ID` and

@@ -8,16 +8,16 @@ summary: "What is happening when a Deployment rolls out a change to your app? De
 meta_image: "RELATIVE_TO_PAGE/deployment-rollout.gif"
 ---
 
-**This post is part 3 in a series on the Kubernetes API.
+*This post is part 3 in a series on the Kubernetes API. Earlier,
 [Part 1]({{< relref "kubespy-and-the-lifecycle-of-a-kubernetes-pod-in-four-images" >}})
-focused on the lifecycle of a `Pod`,
+focused on the lifecycle of a `Pod` and
 [Part 2]({{< relref "kubespy-trace-a-real-time-view-into-the-heart-of-a-kubernetes-service" >}})
-focused on the lifecycle of a `Service`.**
+focused on the lifecycle of a `Service`.*
 
-*What is happening when a `Deployment` rolls out a change to your app?
+What is happening when a `Deployment` rolls out a change to your app?
 What does it actually do when a `Pod` crashes or is killed? What happens
 when a `Pod` is re-labled so that it's not targeted by the
-`Deployment`?*
+`Deployment`?
 
 `Deployment` is probably the most complex resource type in Kubernetes
 core. `Deployment` specifies how changes should be rolled out over

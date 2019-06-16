@@ -79,3 +79,12 @@ scenarios, and are excited to share what we've been up to. You can
 look at some
 [powerful things Pulumi enables here]({{< relref "program-kubernetes-with-11-cloud-native-pulumi-pearls" >}}).
 ```
+
+- Create higher-quality links. When linking to another page, include why in the link. For example,
+  ❌ `Dying of the zombie plague? Go [here](...) for the life-saving vaccine.`
+  ✅ `Dying of the zombie plague? Go get the [life-saving vaccine](...)`
+
+  Typically this is seem for things like:
+
+  ❌`A full working example is [here](https://github.com/pulumi/examples/tree/master/f5bigip-ts-ltm-pool).`
+  ✅ `[F5 BIG-IP Example using Pulumi](https://github.com/pulumi/examples/tree/master/f5bigip-ts-ltm-pool)`
