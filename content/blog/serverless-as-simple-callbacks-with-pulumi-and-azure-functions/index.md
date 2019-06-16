@@ -1,10 +1,10 @@
 ---
 title: "Serverless as Simple Callbacks with Pulumi and Azure Functions"
 authors: ["mikhail-shilkov"]
-tags: ["serverless", "Azure"]
+tags: [Azure/ACS, "Azure"]
 date: "2019-05-07"
 
-description: "The simplest way to take a Node.js function and deploy it to Azure cloud as an HTTP endpoint using Pulumi."
+summary: "The simplest way to take a Node.js function and deploy it to Azure cloud as an HTTP endpoint using Pulumi."
 ---
 
 _Today's guest post is from [Mikhail Shilkov](https://mikhail.io/), a
@@ -190,15 +190,15 @@ some configuration parameters are not exposed yet.
 So, today is the perfect time to chime in and join the discussion! Help
 us answer the questions:
 
--   Is this programming model beneficial to your scenarios?
--   Which trigger types do you want to be supported?
--   How should we package multiple functions into Function App(s)?
--   Do you need input and output bindings to be supported, and if yes,
-    in which shape?
+- Is this programming model beneficial to your scenarios?
+- Which trigger types do you want to be supported?
+- How should we package multiple functions into Function App(s)?
+- Do you need input and output bindings to be supported, and if yes,
+  in which shape?
 
 Feel free to create an issue on
 [GitHub](https://github.com/pulumi/pulumi-azure/), tag us on
-[Twitter](https://twitter.com/PulumiCorp), or join our [community Slack
-channel](https://slack.pulumi.io/).
+[Twitter](https://twitter.com/PulumiCorp), or join our
+[community Slack channel](https://slack.pulumi.io/).
 
 Happy serverless programming!

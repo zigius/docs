@@ -1,14 +1,14 @@
 ---
 title: "Welcoming GitLab users to Pulumi"
 authors: ["praneet-loke"]
-tags: ["New-Feature"]
+tags: ["New-Features"]
 date: "2018-12-03"
 
 summary: "We are very pleased to announce support for signing-in with GitLab accounts."
 meta_image: "RELATIVE_TO_PAGE/gl-2.gif"
 ---
 
-We are very pleased to announce that [Pulumi](https://pulumi.io) now
+We are very pleased to announce that [Pulumi](/) now
 supports signing-in with your GitLab account. Don't have an account on
 GitLab yet? Head on over to <https://gitlab.com> and sign-up for an
 account.
@@ -43,11 +43,11 @@ even to provision your infrastructure to run your services on the cloud.
 Select the organization you created from the organization dropdown menu.
 You should see a **People** tab. Select the People tab.
 
-> -   You will see the People tab if *you* added the organization on
->     Pulumi or if you are an Owner of the GitLab group on
->     [gitlab.com](http://gitlab.com).
-> -   Members must have an active and valid role in your GitLab group,
->     so that you may invite them.
+> - You will see the People tab if *you* added the organization on
+>   Pulumi or if you are an Owner of the GitLab group on
+>   [gitlab.com](http://gitlab.com).
+> - Members must have an active and valid role in your GitLab group,
+>   so that you may invite them.
 
 From the People tab, you can invite additional members in your group to
 also use Pulumi. By inviting members in your group to join Pulumi, you
@@ -56,11 +56,8 @@ would collaborate on a project on GitLab.
 
 ## Running Pulumi on GitLab
 
-Pulumi can be run in [many CI/CD
-environments](https://pulumi.io/reference/cd.html). Pulumi can be easily
-integrated in your CI pipeline on GitLab. Read our guide
-[here](https://pulumi.io/reference/cd-gitlab-ci.html) to learn more
-about how to setup your GitLab CI pipeline with Pulumi.
+Pulumi can be run in [many CI/CD environments]({{< ref "/docs/reference/cd" >}}). Pulumi can be easily
+integrated in your [CI pipeline on GitLab]({{< ref "/docs/reference/cd-gitlab-ci" >}}), too.
 
 ## Deep-linking to your GitLab projects, branches and commits
 
