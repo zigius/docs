@@ -14,7 +14,7 @@ on bag? Or maybe you just like purple.
 
 Whatever the reason, the Pulumi team will be there all week at **Booth
 316, Startup Central, Aria Quad, **and we'd love to chat with you about
-[AWS and Pulumi]({{< ref "/aws" >}}).
+[AWS and Pulumi]({{< ref "/crosswalk/aws" >}}).
 
 Catch up with us on serverless functions, [containers]({{< ref "/containers" >}}) and
 [Kubernetes]({{< ref "/kubernetes" >}}), managed services and

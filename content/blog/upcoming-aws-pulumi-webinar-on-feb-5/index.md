@@ -12,7 +12,7 @@ Pulumi is hosting [a webinar with AWS Fargate]({{< ref "/webinar/aws-fargate-and
 February 5th, 10AM PST** (register
 [here](https://pages.awscloud.com/acq_NAMER_IPC-Pulumi-February-2019-Registration-Page.html?sc_channel=el&sc_campaign=ContainersPulumiFebruary2019&sc_country=US&sc_geo=NAMER&sc_category=mult&sc_outcome=acq%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20&trk=Partner_Website_Landing_Page)).
 We'll be chatting about how to implement cloud native infrastructure
-across your organization using [AWS and Pulumi]({{< ref "/aws" >}}): general purpose programming
+across your organization using [AWS and Pulumi]({{< ref "/crosswalk/aws" >}}): general purpose programming
 languages to deliver everything from VMs to Kubernetes to Serverless.
 
 ## Register Now
