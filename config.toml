@@ -173,6 +173,11 @@ sectionPagesMenu = "main"
 
 [[menu.reference]]
     parent = "node"
+    name = "gitlab"
+    url = "/reference/pkg/nodejs/pulumi/gitlab/"
+
+[[menu.reference]]
+    parent = "node"
     name = "kubernetes"
     url = "/reference/pkg/nodejs/pulumi/kubernetes/"
 
@@ -200,6 +205,11 @@ sectionPagesMenu = "main"
     parent = "node"
     name = "packet"
     url = "/reference/pkg/nodejs/pulumi/packet/"
+
+[[menu.reference]]
+    parent = "node"
+    name = "postgresql"
+    url = "/reference/pkg/nodejs/pulumi/postgresql/"
 
 [[menu.reference]]
     parent = "node"
@@ -260,6 +270,11 @@ sectionPagesMenu = "main"
 
 [[menu.reference]]
     parent = "python"
+    name = "pulumi_gitlab"
+    url = "/reference/pkg/python/pulumi_gitlab/"
+
+[[menu.reference]]
+    parent = "python"
     name = "pulumi_kubernetes"
     url = "/reference/pkg/python/pulumi_kubernetes/"
 
@@ -277,6 +292,11 @@ sectionPagesMenu = "main"
     parent = "python"
     name = "pulumi_openstack"
     url = "/reference/pkg/python/pulumi_openstack/"
+
+[[menu.reference]]
+    parent = "python"
+    name = "pulumi_postgresql"
+    url = "/reference/pkg/python/pulumi_postgresql/"
 
 [[menu.reference]]
     parent = "python"
