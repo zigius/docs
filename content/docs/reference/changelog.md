@@ -563,7 +563,7 @@ As part of this release we are including a beta implementation of `@pulumi/cloud
 
 ### @pulumi/kubernetes 0.17.0
 
-The [Cloud Native SDK for Kubernetes](https://blog.pulumi.com/cloud-native-infrastructure-with-kubernetes-and-pulumi) is available and recommended for production use
+The [Cloud Native SDK for Kubernetes]({{< relref "cloud-native-infrastructure-with-kubernetes-and-pulumi" >}}) is available and recommended for production use
 
 - Incremental updates for Kubernetes resources will no longer be printed at the end of a pulumi up. [pulumi/pulumi-kubernetes#174](https://github.com/pulumi/pulumi-kubernetes/pull/174)
 - More detailed explanations (and sometimes guidance) are now provided when an operation fails - for example, if the target Kubernetes cluster does not support services of type `LoadBalancer`.
@@ -649,8 +649,8 @@ import * as cloud from "@pulumi/cloud-aws";
 
 const api = new cloud.API("api");
 api.get("/", async (req, res) => {
-    const statusText = (await axios.default.get("https://pulumi.io")).statusText;
-    res.write(`GET https://pulumi.io/ == ${statusText}`).end();
+    const statusText = (await axios.default.get("https://www.pulumi.com")).statusText;
+    res.write(`GET https://www.pulumi.com/ == ${statusText}`).end();
 });
 ```
 
