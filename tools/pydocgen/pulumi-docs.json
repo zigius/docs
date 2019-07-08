@@ -36,6 +36,10 @@
       "package_name": "pulumi_digitalocean"
     },
     {
+      "name": "Pulumi DNSimple",
+      "package_name": "pulumi_dnsimple"
+    },
+    {
       "name": "Pulumi GCP",
       "package_name": "pulumi_gcp"
     },
@@ -74,6 +78,10 @@
     {
       "name": "Pulumi Kubernetes",
       "package_name": "pulumi_kubernetes"
+    },
+    {
+      "name": "Pulumi NewRelic",
+      "package_name": "pulumi_newrelic"
     }
   ]
 }
