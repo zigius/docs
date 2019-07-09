@@ -215,7 +215,7 @@
 
 <dl class="class">
 <dt id="pulumi_aws.ec2transitgateway.Route">
-<em class="property">class </em><code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">Route</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>destination_cidr_block=None</em>, <em>transit_gateway_attachment_id=None</em>, <em>transit_gateway_route_table_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.Route" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">Route</code><span class="sig-paren">(</span><em>resource_name</em>, <em>opts=None</em>, <em>blackhole=None</em>, <em>destination_cidr_block=None</em>, <em>transit_gateway_attachment_id=None</em>, <em>transit_gateway_route_table_id=None</em>, <em>__name__=None</em>, <em>__opts__=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.Route" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manages an EC2 Transit Gateway Route.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -224,14 +224,23 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>resource_name</strong> (<em>str</em>) – The name of the resource.</li>
 <li><strong>opts</strong> (<a class="reference internal" href="../../pulumi/#pulumi.ResourceOptions" title="pulumi.ResourceOptions"><em>pulumi.ResourceOptions</em></a>) – Options for the resource.</li>
+<li><strong>blackhole</strong> (<em>pulumi.Input</em><em>[</em><em>bool</em><em>]</em>) – Indicates whether to drop traffic that matches this route (default to <code class="docutils literal notranslate"><span class="pre">false</span></code>).</li>
 <li><strong>destination_cidr_block</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.</li>
-<li><strong>transit_gateway_attachment_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Identifier of EC2 Transit Gateway Attachment.</li>
+<li><strong>transit_gateway_attachment_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Identifier of EC2 Transit Gateway Attachment (required if <code class="docutils literal notranslate"><span class="pre">blackhole</span></code> is set to false).</li>
 <li><strong>transit_gateway_route_table_id</strong> (<em>pulumi.Input</em><em>[</em><em>str</em><em>]</em>) – Identifier of EC2 Transit Gateway Route Table.</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route.html.markdown</a>.</div></blockquote>
+<dl class="attribute">
+<dt id="pulumi_aws.ec2transitgateway.Route.blackhole">
+<code class="descname">blackhole</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.Route.blackhole" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates whether to drop traffic that matches this route (default to <code class="docutils literal notranslate"><span class="pre">false</span></code>).</p>
+</dd></dl>
+
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.Route.destination_cidr_block">
 <code class="descname">destination_cidr_block</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.Route.destination_cidr_block" title="Permalink to this definition">¶</a></dt>
@@ -241,7 +250,7 @@
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.Route.transit_gateway_attachment_id">
 <code class="descname">transit_gateway_attachment_id</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.Route.transit_gateway_attachment_id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Identifier of EC2 Transit Gateway Attachment.</p>
+<dd><p>Identifier of EC2 Transit Gateway Attachment (required if <code class="docutils literal notranslate"><span class="pre">blackhole</span></code> is set to false).</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -308,6 +317,8 @@ a format of their choosing before sending those properties to the Pulumi engine.
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.RouteTable.default_association_route_table">
 <code class="descname">default_association_route_table</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.RouteTable.default_association_route_table" title="Permalink to this definition">¶</a></dt>
@@ -390,6 +401,8 @@ a format of their choosing before sending those properties to the Pulumi engine.
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table_association.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table_association.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.RouteTableAssociation.resource_id">
 <code class="descname">resource_id</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.RouteTableAssociation.resource_id" title="Permalink to this definition">¶</a></dt>
@@ -472,6 +485,8 @@ a format of their choosing before sending those properties to the Pulumi engine.
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table_propagation.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_route_table_propagation.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.RouteTablePropagation.resource_id">
 <code class="descname">resource_id</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.RouteTablePropagation.resource_id" title="Permalink to this definition">¶</a></dt>
@@ -560,6 +575,8 @@ a format of their choosing before sending those properties to the Pulumi engine.
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.TransitGateway.amazon_side_asn">
 <code class="descname">amazon_side_asn</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.TransitGateway.amazon_side_asn" title="Permalink to this definition">¶</a></dt>
@@ -696,6 +713,8 @@ a format of their choosing before sending those properties to the Pulumi engine.
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_vpc_attachment.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_vpc_attachment.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.VpcAttachment.dns_support">
 <code class="descname">dns_support</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.VpcAttachment.dns_support" title="Permalink to this definition">¶</a></dt>
@@ -815,6 +834,8 @@ connection into management.</p>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_vpc_attachment_accepter.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/r/ec2_transit_gateway_vpc_attachment_accepter.html.markdown</a>.</div></blockquote>
 <dl class="attribute">
 <dt id="pulumi_aws.ec2transitgateway.VpcAttachmentAccepter.dns_support">
 <code class="descname">dns_support</code><em class="property"> = None</em><a class="headerlink" href="#pulumi_aws.ec2transitgateway.VpcAttachmentAccepter.dns_support" title="Permalink to this definition">¶</a></dt>
@@ -919,30 +940,40 @@ a format of their choosing before sending those properties to the Pulumi engine.
 <dt id="pulumi_aws.ec2transitgateway.get_direct_connect_gateway_attachment">
 <code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">get_direct_connect_gateway_attachment</code><span class="sig-paren">(</span><em>dx_gateway_id=None</em>, <em>tags=None</em>, <em>transit_gateway_id=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.get_direct_connect_gateway_attachment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information on an EC2 Transit Gateway’s attachment to a Direct Connect Gateway.</p>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_dx_gateway_attachment.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_dx_gateway_attachment.html.markdown</a>.</div></blockquote>
 </dd></dl>
 
 <dl class="function">
 <dt id="pulumi_aws.ec2transitgateway.get_route_table">
 <code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">get_route_table</code><span class="sig-paren">(</span><em>filters=None</em>, <em>id=None</em>, <em>tags=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.get_route_table" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information on an EC2 Transit Gateway Route Table.</p>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_route_table.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_route_table.html.markdown</a>.</div></blockquote>
 </dd></dl>
 
 <dl class="function">
 <dt id="pulumi_aws.ec2transitgateway.get_transit_gateway">
 <code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">get_transit_gateway</code><span class="sig-paren">(</span><em>filters=None</em>, <em>id=None</em>, <em>tags=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.get_transit_gateway" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information on an EC2 Transit Gateway.</p>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway.html.markdown</a>.</div></blockquote>
 </dd></dl>
 
 <dl class="function">
 <dt id="pulumi_aws.ec2transitgateway.get_vpc_attachment">
 <code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">get_vpc_attachment</code><span class="sig-paren">(</span><em>filters=None</em>, <em>id=None</em>, <em>tags=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.get_vpc_attachment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information on an EC2 Transit Gateway VPC Attachment.</p>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_vpc_attachment.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_vpc_attachment.html.markdown</a>.</div></blockquote>
 </dd></dl>
 
 <dl class="function">
 <dt id="pulumi_aws.ec2transitgateway.get_vpn_attachment">
 <code class="descclassname">pulumi_aws.ec2transitgateway.</code><code class="descname">get_vpn_attachment</code><span class="sig-paren">(</span><em>tags=None</em>, <em>transit_gateway_id=None</em>, <em>vpn_connection_id=None</em>, <em>opts=None</em><span class="sig-paren">)</span><a class="headerlink" href="#pulumi_aws.ec2transitgateway.get_vpn_attachment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information on an EC2 Transit Gateway VPN Attachment.</p>
+<blockquote>
+<div>This content is derived from <a class="reference external" href="https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_vpn_attachment.html.markdown">https://github.com/terraform-providers/terraform-provider-aws/blob/master/website/docs/d/ec2_transit_gateway_vpn_attachment.html.markdown</a>.</div></blockquote>
 </dd></dl>
 
 </div>
