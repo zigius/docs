@@ -4,16 +4,21 @@
 <aside class="md:pr-8">
 
     <!-- Sidebar menu toggle for mobile. -->
-    <div class="md:hidden">
-        <button class="blog-sidebar-toggle items-center px-3 py-2 border rounded text-purple border-purple">
-            <i class="fas fa-bars"></i>
-        </button>
-        <a href="{{relref . "/blog" }}">🍹 Pulumi Blog</a>
-    </div>
+    <button class="blog-sidebar-toggle items-center px-3 py-2 border rounded text-purple border-purple md:hidden">
+        <i class="fas fa-bars"></i>
+    </button>
 
-    <h1 class="no-anchor hidden md:flex mt-4 text-2xl">
+    <!--
+        We use an h1 on the blog homepage for SEO (so the page has an h1), otherwise an h3 (as other pages
+        have their own h1).
+    -->
+    {{ $headerTag := "h3" }}
+    {{ if eq .RelPermalink "/blog/" }}
+        {{ $headerTag = "h1" }}
+    {{ end }}
+    {{ printf "<%s class=\"no-anchor md:flex mt-4 text-2xl inline-block\">" $headerTag | safeHTML }}
         <a href="{{relref . "/blog" }}">🍹 Pulumi Blog</a>
-    </h1>
+    {{ printf "</%s>" $headerTag | safeHTML }}
 
     <!-- Sidebar content. Hidden on smaller displays unless toggled. -->
     <div class="blog-sidebar-content hidden md:block">
