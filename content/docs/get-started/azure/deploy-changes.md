@@ -2,7 +2,7 @@
 title: Deploy the Changes
 weight: 9
 menu:
-  get-started:
+  getstarted:
     parent: azure
     identifier: azure-deploy-changes
 ---
