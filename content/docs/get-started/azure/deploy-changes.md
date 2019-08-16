@@ -59,7 +59,7 @@ Resources:
 Duration: 1m11s
 ```
 
-We can use `pulumi stack output` to get the value of [stack outputs]({{< relref "/docs/reference/stack.md#outputs" >}}) from the CLI. So we can `curl` the endpoint.
+We can use `pulumi stack output` to get the value of [stack outputs]({{< relref "/docs/intro/concepts/stack.md#outputs" >}}) from the CLI. So we can `curl` the endpoint.
 
 ```bash
 $ curl $(pulumi stack output ip)
