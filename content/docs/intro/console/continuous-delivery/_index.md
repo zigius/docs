@@ -56,7 +56,7 @@ The encrypted value can only be decrypted by someone with access to that stack.
 ### Managing Complex Environments
 
 Most real-world environments are complex. Perhaps you have a networking stack that's independent from your data
-and application stacks. Pulumi [supports "stack references"]({{< relref "/docs/reference/organizing-stacks-projects.md" >}}), which
+and application stacks. Pulumi [supports "stack references"]({{< relref "/docs/intro/concepts/organizing-stacks-projects.md" >}}), which
 permit one stack to depend upon another. This facilitates continuous delivery at scale.
 
 ### Using Branches for Environments
