@@ -36,8 +36,17 @@ const contentBucket = new aws.s3.Bucket(
                         KeyPrefixEquals: "reference/pkg/nodejs/@pulumi/",
                     },
                     Redirect: {
-                        HostName: config.targetDomain,
+                        //HostName: config.targetDomain,
                         ReplaceKeyPrefixWith: "reference/pkg/nodejs/pulumi/",
+                    },
+                },
+                {
+                    Condition: {
+                        KeyPrefixEquals: "foo/",
+                    },
+                    Redirect: {
+                        //HostName: config.targetDomain,
+                        ReplaceKeyPrefixWith: "docs/reference/faq/",
                     },
                 }
             ],
@@ -74,7 +83,7 @@ const logsBucket = new aws.s3.Bucket(
         acl: "private",
     },
     {
-        protect: true,
+        protect: false,
     });
 
 const fiveMinutes = 60 * 5;
@@ -225,7 +234,7 @@ const cdn = new aws.cloudfront.Distribution(
     "cdn",
     distributionArgs,
     {
-        protect: true,
+        protect: false,
         dependsOn: [ contentBucket, logsBucket ],
     });
 
