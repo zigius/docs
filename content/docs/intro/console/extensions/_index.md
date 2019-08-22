@@ -1,5 +1,5 @@
 ---
-title: "Extensions"
+title: "Integrations and Extensions"
 
 menu:
     intro:
@@ -8,15 +8,13 @@ menu:
         weight: 6
 ---
 
-Pulumi Cloud Console provides ways for you to access your data to power workflows
-and integrations:
+The Pulumi Console provides ways for you to integrate with popular CI/CD platforms and services, and access your data to power workflows.
 
 
-* [Webhooks]({{< relref "webhooks" >}})
-* [Deploy with Pulumi]({{< relref "pulumi-button" >}})
-
-> Some features are only found in the Pulumi Team and Enterprise editions. See
-> [product editions]({{< relref "editions" >}}) for more information.
+{{< notes >}}
+Some features are only found in the Pulumi Team and Enterprise editions. See
+<a href="{{< relref "editions" >}}">Pulumi Product Editions</a> for more information.
+{{< /notes >}}
 
 ## Webhooks
 

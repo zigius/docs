@@ -79,3 +79,33 @@ of our guides below:
 
 > If you need help configuring or would like us to officially support another SAML identity provider,
 > please [contact us]({{< ref "/about#contact-us" >}}).
+
+## Switching Organizations
+
+When using Pulumi from the command-line, you can log using your Pulumi account using the `pulumi login`
+command. You can also see the account you are logged in as by running `pulumi whoami`.
+
+```
+$ pulumi login
+Logged into pulumi.com as chrsmith (https://app.pulumi.com/chrsmith)
+
+$ pulumi whoami --verbose
+User: chrsmith
+Backend URL: https://app.pulumi.com/chrsmith
+```
+
+By default, whenever you create or refer to a stack, it will be within your individual organization.
+However, if you wanted to select or switch to a stack within another organization you can simply
+qualify the stack name with the organization.
+
+For example, to create a stack in the `robot-co` organization named "production", you would run:
+
+```
+$ pulumi stack init robot-co/production
+Created stack 'robot-co/production'
+
+$ pulumi stack ls
+NAME         LAST UPDATE    RESOURCE COUNT  URL
+production*  n/a            n/a             https://app.pulumi.com/robot-co/database-svc/production
+dev          n/a            n/a             https://app.pulumi.com/chrsmith/database-svc/dev
+```
