@@ -13,7 +13,7 @@ of features and capabilities:
 
 ## Pulumi Community Edition{#community-edition}
 
-When you sign into the Pulumi Console, an individual organization is automatically
+When you [sign into the Pulumi Console]({{< relref "account" >}}), an individual organization is automatically
 created for your account and subscribed to the Pulumi Community edition. The Pulumi
 Community Edition is free forever for unlimited individual use.
 
@@ -37,5 +37,9 @@ with advanced or custom needs.
 For more information about the specific differences and capabilities offered for the
 Pulumi Team and Enterprise editions, refer to the [pricing page]({{< ref "/pricing" >}}).
 
-To create a new Pulumi organization with a new edition, see [creating a new
-organization]({{< relref "organizations#creating-a-new-organization" >}}).
+To create a new Pulumi organization with a new edition, see [Creating a New
+Organization]({{< relref "organizations#creating-a-new-organization" >}}).
+
+## Next Steps
+
+* [Accounts]({{< relref "account" >}})

@@ -2,7 +2,7 @@
 title: Organization Roles
 ---
 
-Stacks in the Pulumi Cloud Console are grouped by organizations. And in order to access the
+Stacks in the Pulumi Console are grouped by organizations. In order to access the
 stacks within an organization, a Pulumi user must have a specific _role_ within that
 organization.
 

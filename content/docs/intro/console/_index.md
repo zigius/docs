@@ -53,9 +53,10 @@ The [Pulumi Console](https://app.pulumi.com) is a web application that enables f
     </div>
     <div class="w-1/2 border-solid ml-4 border-t-2 border-gray-200">
         <h3 class="no-anchor pt-4"><a href="{{< relref "extensions" >}}"><i class="fab fa-connectdevelop pr-2"></i> Integrations and Extensions</a></h3>
-        <p>Integrate Pulumi with your current continuous delivery pipeline, build your own extensions, and create reusable templates.
+        <p>Integrate Pulumi with your current continuous delivery pipeline and SAML 2.0 provider, build your own extensions, and create reusable templates.
         <ul class="p2">
             <li><a href="{{< relref "/docs/guides/continuous-delivery" >}}">Continuous Delivery</a></li>
+            <li><a href="{{< relref "/docs/guides/saml" >}}">SAML Integrations</a></li>
             <li><a href="{{< relref "webhooks" >}}">Webhooks</a></li>
             <li><a href="{{< relref "pulumi-button" >}}">"Deploy with Pulumi" Button</a></li>
         </ul>

@@ -7,7 +7,7 @@ up. You may use any of the following identities to sign up:
 
 * GitHub
 * GitLab
-* Atlassian
+* Atlassian Bitbucket
 * [Email](https://app.pulumi.com/signin/email)
 * [Single Sign-on](https://app.pulumi.com/signin/sso)
 
@@ -17,9 +17,7 @@ following:
 * Manage your profile settings
 * [Add an organization]({{< relref "organizations" >}}) backed by Atlassian, GitHub, GitLab, or a SAML
   2.0-compatible identity provider
-* Create new projects and get detailed instructions for deploying your stack
-* View stack outputs and configurations
-* Review your stack activity, resources, and settings
+* [Manage your projects and stacks]({{< relref "/docs/intro/console/collaboration/stack-management" >}})
 
 ## Profile
 
@@ -44,3 +42,7 @@ In order to be invited as a member of a Pulumi organization, you must connect
 your account with the organization's backing identity provider. Once your
 account is linked to your third party identity, you will then show up on the 
 list of users that the org administrator can invite.
+
+## Next Steps
+
+* [Organizations]({{< relref "organizations" >}})
