@@ -208,6 +208,18 @@ func emitMarkdownDocs(srcdir, pkgname string, doc *typeDocNode, outdir, outdatad
 	if err != nil {
 		return err
 	}
+
+	found := false
+	for k := range root.Modules {
+		if k == "types" {
+			found = true
+			break
+		}
+	}
+	if !found {
+		return errors.Errorf("'types' module not found")
+	}
+
 	e.augmentNode(doc, nil, k8s)
 	return e.emitMarkdownModule(rootModule, root, true)
 }
@@ -614,9 +626,12 @@ func (e *emitter) gatherModules(doc *typeDocNode, parentModule string, k8s bool)
 		root = newModule(rootModule)
 		mods[rootModule] = root
 	}
+
 	for modname, mod := range mods {
+		fmt.Printf("A: %q\n", modname)
 		if modname != rootModule {
 			parname := getModuleParentName(modname)
+			fmt.Printf("\tB: %q\n", parname)
 			par := mods[parname]
 			if par == nil {
 				par = newModule(parname)
@@ -625,6 +640,7 @@ func (e *emitter) gatherModules(doc *typeDocNode, parentModule string, k8s bool)
 			par.Modules[modname] = mod
 		}
 	}
+
 	return root, nil
 }
 
