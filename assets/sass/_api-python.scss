@@ -15,6 +15,34 @@
 $anchorjs-font: 1em/1 anchorjs-icons;
 $anchorjs-content: "\e9cb";
 
+div.toctree-wrapper {
+    @apply mt-4;
+
+    > ul {
+        @apply list-none p-0 m-0 overflow-hidden;
+
+        columns: 3 220px;
+
+        li {
+            @apply truncate mt-0;
+
+            a {
+                @apply btn bg-transparent inline-block p-1;
+
+                &:hover {
+                    @apply rounded bg-gray-200;
+                }
+
+                &:before {
+                    @apply text-white text-xs rounded mr-2 px-1 text-center inline-block bg-green-700;
+                    content: "M";
+                    width: 19px;
+                }
+            }
+        }
+    }
+}
+
 // This selector is for the table of contents. There's not much on this page except for a bunch of links.
 div.section[id^="pulumi"] {
     a.headerlink {

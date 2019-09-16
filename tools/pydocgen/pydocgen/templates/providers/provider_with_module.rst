@@ -10,6 +10,10 @@
     <https://github.com/terraform-providers/terraform-provider-{{provider.terraform_provider_name}}/issues>`__.
 {% endif %}
 
+*******
+Modules
+*******
+
 .. toctree::
     {% for module in submodules %}
     {{provider.directory_name}}/{{module}}{% endfor %}
