@@ -28,7 +28,7 @@ serve:
 	@echo -e "\033[0;32mSERVE:\033[0m"
 	yarn lint-markdown --no-error
 	yarn --cwd components run build
-	hugo server --buildDrafts --buildFuture
+	hugo server --buildDrafts --buildFuture --watch=false
 
 .PHONY: serve-components
 serve-components:
